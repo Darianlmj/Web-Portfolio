@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    width: 100%;
+}
+
+.post-feed {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+img.responsive {
+    max-height: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.site-footer {
+    position: relative;
+    color: #fff;
+    background: rgba(255, 253, 238, 0.5);
+    align-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer {  
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.inner {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+
