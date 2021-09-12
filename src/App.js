@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer';
 
 import Home from './pages/Home';
 import About from './pages/About';
-import Resume from './pages/Resume';
+import Resume from './pages/Resume/Resume';
 import PageNotFound from "./pages/PageNotFound";
 
 function App() {
