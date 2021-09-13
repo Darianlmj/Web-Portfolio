@@ -1,0 +1,33 @@
+.shape {
+    content: ''; 
+    height: 65vh; 
+    width: 90vw; 
+    left: 5vw; 
+    position: absolute; 
+    margin: auto; 
+    z-index: -1;
+}
+
+.shape1 {
+    background-color: grey; 
+    clip-path: polygon(81% 10%, 88% 50%, 71% 98%, 36% 82%);
+    transform: translateX(-150px);
+}
+
+.shape2 {
+    background-color: coral; 
+    clip-path: polygon(46% -10%, 114% 49%, 77% 100%, 36% 65%);
+    transform: translateX(-150px);
+}
+
+.shape3 {
+    background-color: lightpink; 
+    clip-path: polygon(16% 12%, 37% 15%, 45% 5%, 72% 66%, 14% 93%, 0% 41%, 6% 35%);
+    transform: translateX(-80px);
+}
+
+.profileImage {
+    width: 100%;
+    transform: translateX(-180px);
+    transform: translateY(-180px);
+}

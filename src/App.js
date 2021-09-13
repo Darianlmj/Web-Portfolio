@@ -5,7 +5,7 @@ import SideBar from './components/SideBar';
 import Footer from './components/Footer/Footer';
 
 import Home from './pages/Home';
-import About from './pages/About';
+import About from './pages/About/About';
 import Resume from './pages/Resume/Resume';
 import PageNotFound from "./pages/PageNotFound";
 
