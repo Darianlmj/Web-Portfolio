@@ -4,7 +4,8 @@
     width: 90vw; 
     left: 5vw; 
     position: absolute; 
-    margin: auto; 
+    margin: auto;
+    /* padding: 50px;  */
     z-index: -1;
 }
 
@@ -27,7 +28,17 @@
 }
 
 .profileImage {
-    width: 100%;
-    transform: translateX(-180px);
-    transform: translateY(-180px);
+    height: 600px;
+    transform: translate(420px, -230px);
+    margin: auto;
+}
+
+.AboutInfo {
+    width: 400px;
+}
+
+@media screen and (max-width: 1960px) {
+    .shape {
+        padding: auto;
+    }
 }

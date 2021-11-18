@@ -11,9 +11,9 @@ const IntroAnimation = () => {
       delay: 1000,
       config: config.molasses,
     })
-  
+
     return (
-        <animated.h2 className="intro-card-excerpt" style={props}>Just another regular Computer Science student....</animated.h2>
+        <animated.h2 className="intro-card-excerpt" style={props}># Computer Science Student</animated.h2>
     )
 }
 
@@ -24,12 +24,12 @@ const IntroAnimation2 = () => {
       from: { opacity: 0 },
       reset: false,
       reverse: flip,
-      delay: 3000,
+      delay: 2750,
       config: config.molasses,
     })
   
     return (
-        <animated.h2 className="intro-2" style={props}>For Now</animated.h2>
+        <animated.h2 className="intro-2" style={props}># Security and Web-Dev Enthusiast</animated.h2>
     )
 }
 

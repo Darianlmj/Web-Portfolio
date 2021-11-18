@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import { AboutContainer, AboutImage, AboutTitle } from './AboutElements'
+import { AboutContainer, AboutImage, AboutTitle, AboutExcerpt } from './AboutElements'
 import './index.css'
 
-import Asset4 from '../../images/Asset4.PNG'
+import ProfilePic from "../../images/ProfilePic.png"
 
 const About = () => {
     useEffect(() => {
@@ -13,15 +13,20 @@ const About = () => {
         <>  
             <AboutContainer>
                 <AboutImage>
-                    <div className="shape shape1">sadasdasdsadasd</div>
-                    <div className="shape shape2">sdsadsadasdsdaasd</div>
-                    <div className="shape shape3">asdsadsdasdasdasd</div>
-                    <AboutTitle>
-                        About Me
-                    </AboutTitle>
+                    <div className="shape shape1"></div>
+                    <div className="shape shape2"></div>
+                    <div className="shape shape3"></div>
                 </AboutImage>
+                    <div className="AboutInfo">
+                        <AboutTitle>
+                            About Me
+                        </AboutTitle>
+                        <AboutExcerpt>
+                            I'm a second year Computer Science student at the University of New South Wales.
+                        </AboutExcerpt>
+                    </div>
             </AboutContainer>
-            <img className="profileImage" src={Asset4} alt="Image"></img>
+            <img className="profileImage" src={ProfilePic} alt="Image"></img>
             
         </>
     )

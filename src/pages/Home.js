@@ -1,19 +1,17 @@
 import React from "react";
 import { IntroAnimation, IntroAnimation2 } from "../components/Animation/IntroAnimation"
 
-import ProfilePic from "../images/ProfilePic.jpeg"
-import Asset1 from "../images/Asset1.png"
-import Asset2 from "../images/Asset2.png"
+import ProfilePic from "../images/ProfilePic.png"
 
 const Home = () => {
     return (        
         <main id="site-main" className="site-main-outer">
             <div className="inner">
-                <div className="profile-pic">
+                {/* <div className="profile-pic"> */}
                     <img className="profile-pic responsive" 
                     src={ProfilePic}
-                    alt="Congrats! You found me =)"></img>
-                </div>
+                    alt="flag{C0nGRaT5! y0U F0uNd M3 =)}"></img>
+                {/* </div> */}
                 <div className="intro-card">
                     {/* Brief Introduction */}
                     <article>                        
@@ -29,9 +27,9 @@ const Home = () => {
                     </article>
                 </div>
 
-                <div className="post-feed">
+                {/* <div className="post-feed"> */}
                     {/* Git GitHub Cheatsheet */}
-                    <article className="post-card">
+                    {/* <article className="post-card">
                         <a className="post-card-image-link" href="https://gist.github.com/Darianlmj/db83504856b58bb91fb5ce2ae31ca471">
                             <img className="post-card-image" 
                                 sizes="(max-width: 1000px) 400px, 700px" 
@@ -54,10 +52,10 @@ const Home = () => {
                                 </header>
                             </a>
                         </div>
-                    </article>
+                    </article> */}
                     
                     {/* How I Made This Website */}
-                    <article className="post-card">
+                    {/* <article className="post-card">
                         <a className="post-card-image-link" href="#">
                             <img className="post-card-image" 
                                 sizes="(max-width: 1000px) 400px, 700px" 
@@ -78,8 +76,8 @@ const Home = () => {
                                 </header>
                             </a>
                         </div>
-                    </article>               
-                </div>
+                    </article>                */}
+                {/* </div> */}
             </div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
