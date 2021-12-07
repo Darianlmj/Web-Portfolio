@@ -8,7 +8,7 @@
   position: relative;
   height: 600px;
   min-height: 300px;
-  background: linear-gradient(to left, #E0EAFC, #CFDEF3);
+  background: #fffdfa;
   text-align: center;
   box-shadow: 1px 1px 1px 20px rgb(222 225 229 / 15%), 
               1px 1px 1px rgb(222 225 229 / 15%);
@@ -22,11 +22,11 @@
   text-align: left;
   margin-left: 30%;
   margin-right: 25%;
-  font-size: 3.5rem;
-  letter-spacing: -0.05rem;
-  font-family: 'Mulish', -apple-system, sans-serif;
+  font-size: 58px;
+  letter-spacing: 0.05rem;
+  font-family: 'lyon-display-web';/*'Mulish', -apple-system, sans-serif;*/
   font-weight: 800;
-  color: #292626;
+  color: #303538;
   
   /* text-transform: uppercase; */
 }
@@ -36,14 +36,12 @@
   margin-left: 32%;
   margin-right: 10%;
   font-size: 45px;
-  line-height: 80px;
+  font-weight: 700;
+  line-height: 60px;
   letter-spacing: .5px;
   text-align: left;
-  font-family: Nunito;
-  color: #dfdfe6;
-  background: #83a4d4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #000428, #004e92);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'lyon-display-web';
+  background: #303538;  /* fallback for old browsers */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -87,12 +85,16 @@ img.profile-pic {
 
   .intro-card-excerpt h2 {
     margin: 0;
-    text-align: center;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 40px;
   }
 
   .intro-2 h2 {
     margin: 0;
-    text-align: center;
+    text-align: left;
+    font-size: 40px;
+    padding-left: 30px;
   }
 
   img.profile-pic {
@@ -105,18 +107,20 @@ img.profile-pic {
 and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2) {
   .intro-card {
-      position: relative;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 73%, 0 70%);
   }
 
   .intro-card-title {
-      font-size: 50px;
+    font-size: 50px;
   }
 
   .intro-card-excerpt h2 {
-      font-size: 45px;
-      overflow-wrap: break-word;
-      padding-top: 100px;
-      padding-left: 30px;
+    font-size: 40px;
+    overflow-wrap: break-word;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 30px;
   }
 }
 
@@ -360,6 +364,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .post-card-title, .post-card-tags{
       text-align: center;
   }
+
 }
 
 /* ----------- Ipad Portrait and Landscape ----------- */
@@ -386,7 +391,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 .footer {
   padding: 20px 0;
   color: #000000;
-  background-color: rgb(232, 240, 252);
+  background-color: #fffdfa;
 }
 
 .footer .row {

@@ -17,7 +17,7 @@ export const Nav = styled.nav`
 
 export const MobileIcon = styled.div`
     display: none;
-    color: #000;
+    color: #fffafa;
 
     @media screen and (max-width: 768px) {
         display: block;

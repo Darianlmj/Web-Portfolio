@@ -13,7 +13,7 @@ const IntroAnimation = () => {
     })
 
     return (
-        <animated.h2 className="intro-card-excerpt" style={props}># Computer Science Student</animated.h2>
+        <animated.h2 className="intro-card-excerpt" style={props}> Computer Science Student</animated.h2>
     )
 }
 
@@ -29,7 +29,7 @@ const IntroAnimation2 = () => {
     })
   
     return (
-        <animated.h2 className="intro-2" style={props}># Security and Web-Dev Enthusiast</animated.h2>
+        <animated.h2 className="intro-2" style={props}> Security and Web-Dev Enthusiast</animated.h2>
     )
 }
 

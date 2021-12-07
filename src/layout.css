@@ -44,7 +44,7 @@ img.responsive {
     background: #0F2027;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3a7bd5, #085078 /*#2c3e50*/); /*Chrome 10-25, Safari 5.1-6*/
     background: linear-gradient(to right, #3a7bd5, #085078 /*#2c3e50*/);
-    height: 800px;
+    aspect-ratio: 2.2;
 }
 
 
