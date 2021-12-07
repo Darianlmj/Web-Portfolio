@@ -19,7 +19,7 @@ const NavBar = ({ toggle }) => {
                 <a className="NavBarBrand" href="/">
                     <TypeWriterEffect
                         startDelay={100}
-                        cursorColor="#000"
+                        cursorColor="#fff"
                         text="Darianlmj"
                         typeSpeed={250}
                         scrollArea={document.querySelector('.flashing-cursor')}

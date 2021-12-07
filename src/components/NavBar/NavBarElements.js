@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-    background: rgb(232, 240, 252);
+    background: #383C44; //rgb(232, 240, 252);
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -17,7 +17,7 @@ export const Nav = styled.nav`
 
 export const MobileIcon = styled.div`
     display: none;
-    color: #000;
+    color: #fffafa;
 
     @media screen and (max-width: 768px) {
         display: block;
