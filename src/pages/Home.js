@@ -1,6 +1,6 @@
 import React from "react";
 import { IntroAnimation, IntroAnimation2 } from "../components/Animation/IntroAnimation"
-
+import Emoji from "../components/Emoji/Emoji";
 import ProfilePic from "../images/ProfilePic.png"
 
 const Home = () => {
@@ -14,7 +14,9 @@ const Home = () => {
                     {/* Brief Introduction */}
                     <article>                        
                         <div className="intro-post">
-                            <h1 className="intro-card-title">Hey There! I'm Darian</h1>
+                            <h1 className="intro-card-title">
+                                <Emoji symbol="👋🏼" className="waving-hand"></Emoji> Hey There! I'm Darian
+                            </h1>
                             <section className="intro-card-excerpt">
                                 <IntroAnimation></IntroAnimation>
                             </section>

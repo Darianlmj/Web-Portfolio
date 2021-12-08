@@ -2,42 +2,44 @@ import styled from "styled-components";
 
 export const ResContainer = styled.div`
     display: flex;
-    justify-content: space-around;
-    margin: 20px 20px;
-    padding: 20px 20px;
-    border: solid;
-`
-
-export const ResCol1 = styled.div`
-    display: flex;
-    width: 1000px;
-    flex-direction: column;
-    justify-content: space-evenly;
-`
-export const ResCol2 = styled.div`
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-`
-
-export const SectionHeader = styled.div`
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    font-size: 17px;
-    align-items: center;
-`
-
-export const Bars = styled.div`
-    background: black;
-    width: 100%;
-    height: 5px;
-    
-`
-
-export const ResImage = styled.img`
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    max-width: calc(1250px - (50px * 2));
+    padding-left: 3%;
+    padding-right: 3%;
     margin: 0 auto;
+    /* border: solid; */
+    justify-content: space-between;
+`
+
+export const ResIntro = styled.div`
+    padding-top: 10%;
+    padding-bottom: 10%;
+`
+
+export const ResName = styled.div`
+    font-family: lyon-display-web;
+    font-weight: 800;
+    font-size: 55px;
+`
+
+export const ResSummary = styled.div`
+    font-weight: 500;
+    font-size: 20px;
+    color: #777777;
+`
+
+export const ResNavBar = styled.div`
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: calc(1200px - (50px * 2));
+    margin: 0 auto;
+    justify-content: space-between;
+`
+
+export const ResContent = styled.div`
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 18px;
+    color: #777777;
 `
