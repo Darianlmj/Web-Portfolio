@@ -1,3 +1,5 @@
+import Emoji from "../Emoji/Emoji"
+
 const Footer = () => {
     return (
     <div className="footer">
@@ -28,7 +30,9 @@ const Footer = () => {
                     <a href="https://www.linkedin.com/in/darianlmj/"><i className="icon ion-social-linkedin"></i></a>
                     <a href="https://www.instagram.com/_darianlmj_/"><i className="icon ion-social-instagram"></i></a>
                 </div>
-                <p className="statement">Made with {'\u2661'} by Darian in 2021</p>
+                <p className="statement">
+                    Made with <Emoji symbol="♡"></Emoji> by Darian in 2021
+                </p>
             </div>
         </footer>
     </div>
