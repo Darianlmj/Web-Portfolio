@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
 
-import { ResContainer, ResSummary, ResName, ResIntro, ResNavBar, ResContent } from "./ResumeElements";
-import Asset3 from "../../images/Asset3.jpeg"
+import { ResContainer, ResSummary, ResName, ResIntro, ResContent } from "./ResumeElements";
 import './index.css'
 import HorizontalTimeline from "../../components/Timeline/Timeline";
-import { Divider, Button } from '@mui/material';
-import Anchor from '../../components/Anchor/Anchor.js'
+import { Button } from '@mui/material';
 import Emoji from "../../components/Emoji/Emoji";
-import { position } from "dom-helpers";
 import { HashLink as Link } from 'react-router-hash-link';
 
 const Resume = () => {
@@ -24,8 +21,6 @@ const Resume = () => {
     const emojiStyle = {
         position: 'absolute',
     }
-
-
     
     return (
         <div style={{backgroundColor:'#fffdfa'}}>
