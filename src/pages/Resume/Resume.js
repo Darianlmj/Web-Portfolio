@@ -3,10 +3,12 @@ import React, { useEffect } from "react";
 import { ResContainer, ResSummary, ResName, ResIntro, ResNavBar, ResContent } from "./ResumeElements";
 import Asset3 from "../../images/Asset3.jpeg"
 import './index.css'
+import HorizontalTimeline from "../../components/Timeline/Timeline";
 import { Divider, Button } from '@mui/material';
 import Anchor from '../../components/Anchor/Anchor.js'
 import Emoji from "../../components/Emoji/Emoji";
 import { position } from "dom-helpers";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Resume = () => {
     useEffect(() => {
@@ -22,12 +24,14 @@ const Resume = () => {
     const emojiStyle = {
         position: 'absolute',
     }
+
+
     
     return (
         <div style={{backgroundColor:'#fffdfa'}}>
             <ResContainer style={{justifyContent: 'space-around'}}>
                 <ResIntro>
-                    <div className="res-greeting">
+                    <div id='top' className="res-greeting">
                         Hello, I'm
                     </div>
                     <ResName>
@@ -35,20 +39,17 @@ const Resume = () => {
                     </ResName>
                     <ResSummary>
                         Second year computer science student, <br></br>
-                        aspiring web developer and security enthusiast.
+                        aspiring frontend web developer and security enthusiast.
                     </ResSummary>
                 </ResIntro> 
                 <div style={emojiContainer}>
                     <Emoji style={emojiStyle} symbol="👋🏼" className="waving-hand"></Emoji>
                 </div>
             </ResContainer>
-            <Divider className="divider" sx={{ border: 1, my: 0, mx: 'auto'}}/>
-            <ResNavBar>
-                <Anchor/>
-            </ResNavBar>
+            <HorizontalTimeline/>
             <ResContainer>
                 <div></div>
-                <div id='education' style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center', textAlign: 'center', fontFamily: 'lyon-display-web', fontWeight: 'bold', fontSize:35}}>
+                <div id='education' className='Education' style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center', textAlign: 'center', fontFamily: 'lyon-display-web', fontWeight: 'bold', fontSize:35}}>
                 <div style={{fontSize: 50}}><Emoji style={emojiStyle} symbol="🏫" className="waving-hand"></Emoji></div>Education
                 </div>
                 <ResContent>
@@ -112,9 +113,9 @@ const Resume = () => {
                     <div style={{paddingTop: 20, paddingBottom: 20}}>Completed a minor and major cybersecurity project (more details below) which <br></br> revolved around the theme of Governance and IOCs.</div>
                 </ResContent>
                 
-                <div id='experience' style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center', textAlign: 'center', fontFamily: 'lyon-display-web', fontWeight: 'bold', fontSize:35}}>
+                <a id='experience' style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center', textAlign: 'center', fontFamily: 'lyon-display-web', fontWeight: 'bold', fontSize:35}}>
                     <div style={{fontSize: 50}}><Emoji style={emojiStyle} symbol="💼" className="waving-hand"></Emoji> </div>Experience
-                </div>
+                </a>
             </ResContainer>
             {/* <ResContainer>
                 <div>Certificates</div>
@@ -177,7 +178,7 @@ const Resume = () => {
                                 </ul> 
                             </div>
                             <div style={{textAlign: 'center', paddingBottom: 60}}>
-                                <Button sx={{"&.MuiButtonBase-root:hover": {
+                                <Button sx={{background:"#4285F4", "&.MuiButtonBase-root:hover": {
                                                 color: "white"
                                             }}} 
                                         href='https://github.com/Darianlmj/Web-Portfolio' 
@@ -214,23 +215,38 @@ const Resume = () => {
                     </ResContent>
                 </div>
             </ResContainer>
-            {/* <ResContainer>
-                <div>Skills</div>
-                <div>
-                    <div>
-                        Programming Languages <br></br>
-                        Python, C, HTML, CSS, Javascript, React.js
-                    </div>
-                    <div>
-                        Technical Skills<br></br>
-                        Git, Github, Figma, Nessus, Wordpress, VirtualBox
-                    </div>
-                    <div>
-                        Languages<br></br>
-                        Proficient English and Conversational Malay
-                    </div>
+            <ResContainer>
+                <div id='skills' style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center', textAlign: 'center', fontFamily: 'lyon-display-web', fontWeight: 'bold', fontSize:35}}>
+                    <div style={{fontSize: 50}}><Emoji style={emojiStyle} symbol="🧑🏻‍💻" className="waving-hand"></Emoji> </div>Skills
                 </div>
-            </ResContainer> */}
+                <ResContent>
+                    <div>
+                        <div style={{fontSize: 23, color: 'black'}}>
+                            Programming Languages <br></br>
+                        </div>
+                        <div style={{paddingTop: 10, paddingBottom: 20}}>
+                            Python, C, HTML, CSS, Javascript, React.js
+                        </div>
+                    </div>
+                    <div>
+                        <div style={{fontSize: 23, color: 'black'}}>
+                            Technical Skills<br></br>
+                        </div>
+                        <div style={{paddingTop: 10, paddingBottom: 20}}>
+                            Git, Github, Figma, Nessus, Wordpress, VirtualBox
+                        </div>
+                    </div>
+                    <div>
+                        <div style={{fontSize: 23, color: 'black'}}>
+                            Languages<br></br>
+                        </div>
+                        <div style={{paddingTop: 10, paddingBottom: 20}}>
+                            Proficient English and Conversational Malay
+                        </div>   
+                    </div>
+                </ResContent>
+            </ResContainer>
+            <div className='backToTop'><Link style={{color: '#777777'}}to='#top'><i class="fas fa-arrow-circle-up fa-2x"></i></Link></div>
         </div>
         
     )

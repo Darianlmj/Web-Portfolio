@@ -6,3 +6,12 @@
 .divider {
     max-width: calc(1150px - (50px * 2));
 }
+.backToTop {
+    text-align: center;
+    max-width: calc(1150px - (50px * 2));
+    margin: 0 auto;
+}
+
+a:hover {
+    color: #6C6C6C;
+}
