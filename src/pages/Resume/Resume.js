@@ -1,144 +1,150 @@
 import React, { useEffect } from "react";
 
-import { ResContainer, ResCol1, ResCol2, SectionHeader, Bars, ResImage } from "./ResumeElements";
+import { ResContainer, ResSummary, ResName, ResIntro, ResNavBar, ResContent } from "./ResumeElements";
 import Asset3 from "../../images/Asset3.jpeg"
 import './index.css'
+import { Divider } from '@mui/material';
+import Anchor from '../../components/Anchor/Anchor.js'
+import Emoji from "../../components/Emoji/Emoji";
+import { position } from "dom-helpers";
 
 const Resume = () => {
     useEffect(() => {
         document.title = "Resume | Darianlmj";  
     }, []);
 
+    const emojiContainer = {
+        position: 'relative',    
+        fontSize: 100,
+        top: 110,
+    }
+
+    const emojiStyle = {
+        position: 'absolute',
+    }
+    
     return (
-        <div>
-            <ResContainer>
-                {/* --------------------------------------------------------
-
-                                            Column 1
-                
-                ------------------------------------------------------------- */}
-                <ResCol1>
-                    <ResImage src={Asset3} alt="Profile Pic"></ResImage>
-                    <div>
-                        <SectionHeader>
-                            <div className="HeaderName">Contact</div>
-                            <Bars></Bars>
-                        </SectionHeader>
-                        <div className="Excerpt">
-                            <div>Email: darianlmj@gmail.com</div>
-                            <div>LinkedIn: linkedin.com/in/darianlmj/</div>
-                            <div>GitHub: github.com/Darianlmj</div>
-                            <div>Website: darianlmj.github.io</div>
-                        </div>
-
-                        <SectionHeader>
-                            <div className="HeaderName">Skills</div>
-                            <Bars></Bars>
-                        </SectionHeader>
-                        <div className="Excerpt">
-                            <div>Programming Languages: C, HTML, CSS, JavaScript, React.js</div>
-                            <div>Technical Skills: Git, GitHub, Figma, Squarespace</div>
-                            <div>Language: Proficient English and conversational Malay</div>
-                        </div>
+        <div style={{backgroundColor:'#fffdfa'}}>
+            <ResContainer style={{justifyContent: 'space-around'}}>
+                <ResIntro>
+                    <div className="res-greeting">
+                        Hello, I'm
                     </div>
-                </ResCol1>
-
-                {/* --------------------------------------------------------
-
-                                            Column 2
-                
-                ------------------------------------------------------------- */}
-                <ResCol2>
-                    <div className="ResHeader">
-                        <h1 className="ResTitle">Darian Lee Ming Jian</h1>
-                        <h3 className="ResDesc">Computer Science Student</h3>
-                    </div>
-                    <div className="ResInfo">
-                        <SectionHeader>
-                            <div className="HeaderName">Objective</div>
-                            <Bars>  
-                            </Bars>
-                        </SectionHeader>
-                        <div className="Excerpt">
-                        A 2nd year Computer Science student with a passion for cyber security and front-end web development. Being a responsible and independent team player who is familiar with fundamental security concepts, I am seeking a mentorship that will give a unique perspective into the inner workings of a cyber security firm and help launch a future career in this industry.
-                        </div>
-
-                        <SectionHeader>
-                        <div className="HeaderName">Education</div>
-                        <Bars>  
-                        </Bars>
-                        </SectionHeader>
-                        <div className="Excerpt">
-                            <div className="EdTitle">
-                                <div>University of New South Wales</div>					        
-                                <div>2021 - Present</div>
-                            </div>
-                            <div>
-                                Bachelor of Computer Science | Weighted Average Mark: 73.2%
-                            </div>
-
-                            <div className="EdTitle">
-                                <div>University of New South Wales Global</div>					        
-                                <div>2020 - 2021</div>
-                            </div>
-                            <div>
-                            Diploma in Computer Science | Weighted Average Mark: 74.7%
-                            </div>
-                            <li>	Awarded the UNSW Global Diploma Scholarship in 2020 and 2021.</li>
-                        </div>
-
-                        <SectionHeader>
-                            <div className="HeaderName">Experience</div>
-                            <Bars>  
-                            </Bars>
-                        </SectionHeader>
-                        <div className="Excerpt">
-                            <div className="ExpTitle">
-                                <div>UNSW ASEAN Society IT Associate</div>					        
-                                <div>June 2021 - Present</div>
-                            </div>
-                            <li>Redesigned and implemented the front-end for the “Partners” and “Our Team” page in the society's 2021 flagship event website (UNSW ASEAN Conference).</li>
-                            <li>Facilitated the front-end development of the society’s website with a team of 6 people.</li>
-                            <li>Managed the transition of 108 members to a new social networking platform (Discord).</li>
-                            <li>Awarded the President’s Choice Award in September 2021 for contributions to the society.</li> 
-
-                            <div className="ExpTitle">
-                                <div>ANZ Cyber Security Virtual Experience</div>					        
-                                <div>May 2021</div>
-                            </div>
-                            <li>Inspected and analysed emails to detect the presence of malicious content. </li>
-                            <li>Investigated packet capture files using Wireshark to analyse network traffic.</li>
-
-                            <div className="ExpTitle">
-                                <div>Genius Armoury Introduction to Cyber Security Virtual Experience</div>					        
-                                <div>May 2021</div>
-                            </div>
-                            <li>Familiarity with concepts such as cyber threats, malwares, network, hashing and digital forensic techniques.</li>                       
-                        </div>
-
-                        <SectionHeader>
-                            <div className="HeaderName">Projects</div>
-                            <Bars>  
-                            </Bars>
-                        </SectionHeader>
-                        <div className="Excerpt">
-                            <div className="EdTitle">
-                                <div>Portfolio website</div>					        
-                                <div>June 2021 - Present</div>
-                            </div>
-                            <li>A “blog/portfolio” style static website.</li>                       
-                            <li>Made using React.js, CSS and hosted on GitHub Pages.</li>                       
-
-                            <div className="EdTitle">
-                                <div>Text Analyser</div>					        
-                                <div>2020 - 2021</div>
-                            </div>
-                            <li>Designed a command-line program using C to produce the top ‘n’ most frequently occurring words in a given text file by utilising a binary search tree. Processes up to 500,000 words in less than 3 seconds.</li>
-                        </div>
-                    </div>
-                </ResCol2>
+                    <ResName>
+                        Darian Lee Ming Jian
+                    </ResName>
+                    <ResSummary>
+                        Second year computer science student, <br></br>
+                        aspiring web developer and security enthusiast.
+                    </ResSummary>
+                </ResIntro> 
+                <div style={emojiContainer}>
+                    <Emoji style={emojiStyle} symbol="👋🏼" className="waving-hand"></Emoji>
+                </div>
             </ResContainer>
+            <Divider className="divider" sx={{ border: 1, my: 0, mx: 'auto'}}/>
+            <ResNavBar>
+                <Anchor/>
+            </ResNavBar>
+            <ResContainer>
+                <div></div>
+                <div id='education' style={{fontFamily: 'lyon-display-web', fontWeight: 'bold', fontSize:35, paddingTop: 180, paddingBottom: 180}}>
+                    Education
+                </div>
+                <ResContent>
+                    <div style={{paddingBottom: 25}}>
+                        <div style={{fontSize: 23, color: 'black'}}>
+                            University of New South Wales 
+                        </div>
+                        <div style={{fontSize: 18}}>June 2021 - Present</div>
+                        Bachelor of Computer Science   <br></br>
+                        Weighted Average Mark: 73.2%
+                    </div>
+                    <div>
+                        <div style={{fontSize: 23, color: 'black'}}>University of New South Wales Global</div>
+                        <div style={{fontSize: 18}}>May 2020 - May 2021</div>
+                        Diploma in Computer Science <br></br>
+                        Weighted Average Mark: 74.7% <br></br>
+                        Awarded the UNSW Global Diploma Scholarship in 2020 and 2021
+                    </div>
+                </ResContent>
+            </ResContainer>
+            {/* <ResContainer>
+                <div>
+                    <div>
+                        UNSW ASEAN Society IT Associate<br></br>
+                        Redesigned and implemented the frontend for the "Partners" and "Our Team" page in the society's 2021 flagship event website for which I was awarded the President’s Choice Award in September 2021 <br></br>
+                        Collaborated virtually with a team of ~50 members to organise the UNSW ASEAN Conference, a large scale 2-day online conference which attracted over 1700+ participants from multiple countries. <br></br>
+                        Moderated and managed the livestream of the conference using OBS on Youtube and Vimeo.
+                    </div>
+                    <div>
+                        Privasec Hackcelerator Mentorship 2021<br></br>
+                        A cybersecurity mentorship which included technical meetings discussing the latest methods used in penetration testing.<br></br>
+                        Gained insight and experience into the daily workflow of a cybersecurity consultant.
+                    </div>
+                </div>
+                <div>Experience</div>
+            </ResContainer>
+            <ResContainer>
+                <div>Certificates</div>
+                <div>
+                    <div>
+                        ANZ CyberSecurity Virtual Experience <br></br>
+                    </div>
+                    <div>
+                        Genius Armoury Introduction to Cybersecurity Virtual Experience Program<br></br>
+                    </div>
+                    <div>
+                        JPMorgan Chase & Co. Software Engineering Virtual Experience<br></br>
+                    </div>
+                </div>
+            </ResContainer>
+            <ResContainer>
+                <div>Projects</div>
+                <div>
+                    <div>
+                        UNSW Streams <br></br>
+                        A collaborative communications platform intended to facilitate teaching and studies during the COVID-19 pandemic.
+                        Built using python, the application features the ability to create channels/dms, get notifications, tag other users, summon a multipurpose bot in channels and perform administrative privileges such as removing messages and users. The application's data is also able to persist and can handle concurrent sessions.
+                        Collaborated with 5 members following Agile practices such as version control, standups and issue tracking using Jira.
+                    </div>
+                    <div>
+                        Portfolio Website<br></br>
+                        A static website featuring multiple pages and the ability to resize responsively depending on the aspect ratio of the current screen. 
+                        Built using React.js and deployed using Heroku.
+                    </div>
+                    <div>
+                        Privasec Minor Project<br></br>
+                        Managed, defended and hardened access to an Ubuntu server by restricting server access, configuring DNS records, SSL patching.
+                        Configured and deployed a Wordpress LAMP stack website while focusing on maintaining security.
+                        Employed penetration testing methods to discover vulnerabilities and compromise similar servers of other mentees using NESSUS and Nikto.
+                    </div>
+                    <div>
+                        Privasec Major Project<br></br>
+                        Deployed a malware/lab testing environment using Kali Linux and Windows 11 system.
+                        Simulated an attack on a Windows machine using Mimikatz and a Metasploit Meterpreter reverse shell while analysing indicators of compromise using Sysmon when Windows Defender is turned off.
+                    </div>
+                </div>
+            </ResContainer>
+            <ResContainer>
+                <div>Skills</div>
+                <div>
+                    <div>
+                        Programming Languages <br></br>
+                        Python, C, HTML, CSS, Javascript, React.js
+                    </div>
+                    <div>
+                        Technical Skills<br></br>
+                        Git, Github, Figma, Nessus, Wordpress, VirtualBox
+                    </div>
+                    <div>
+                        Languages<br></br>
+                        Proficient English and Conversational Malay
+                    </div>
+                </div>
+            </ResContainer> */}
         </div>
+        
     )
 }
 

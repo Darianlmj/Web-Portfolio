@@ -1,31 +1,8 @@
-.ResHeader {
-    text-align: center;
-}
-
-.ResTitle {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.ResDesc {
+.res-greeting {
     font-size: 25px;
     font-weight: bold;
 }
 
-.HeaderName {
-    padding: 10px;
-}
-
-.Excerpt {
-    padding: 10px 20px;
-}
-
-.EdTitle, .ExpTitle {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-}
-
-.ResInfo {
-    margin: auto;
+.divider {
+    max-width: calc(1000px - (50px * 2));
 }
