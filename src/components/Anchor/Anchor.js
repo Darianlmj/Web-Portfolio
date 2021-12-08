@@ -21,7 +21,7 @@ const Anchor = () => {
     return (
         <div style={anchorStyle} onClick={handleClick}>
             <a style={anchorLink} href='#education'>Education</a>
-            <div>Experience</div>
+            <a style={anchorLink} href='#experience'>Experience</a>
             <div>Certificates</div>
             <div>Projects</div>
             <div>Skills</div>

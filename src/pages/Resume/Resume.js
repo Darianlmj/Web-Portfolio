@@ -48,44 +48,75 @@ const Resume = () => {
             </ResNavBar>
             <ResContainer>
                 <div></div>
-                <div id='education' style={{fontFamily: 'lyon-display-web', fontWeight: 'bold', fontSize:35, paddingTop: 180, paddingBottom: 180}}>
-                    Education
+                <div id='education' style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center', textAlign: 'center', fontFamily: 'lyon-display-web', fontWeight: 'bold', fontSize:35}}>
+                <div style={{fontSize: 50}}><Emoji style={emojiStyle} symbol="🏫" className="waving-hand"></Emoji></div>Education
                 </div>
                 <ResContent>
                     <div style={{paddingBottom: 25}}>
                         <div style={{fontSize: 23, color: 'black'}}>
                             University of New South Wales 
                         </div>
-                        <div style={{fontSize: 18}}>June 2021 - Present</div>
+                        <div style={{fontSize: 18, color: '#4285F4'}}>June 2021 - Present</div>
                         Bachelor of Computer Science   <br></br>
                         Weighted Average Mark: 73.2%
                     </div>
                     <div>
                         <div style={{fontSize: 23, color: 'black'}}>University of New South Wales Global</div>
-                        <div style={{fontSize: 18}}>May 2020 - May 2021</div>
+                        <div style={{fontSize: 18, color: '#4285F4'}}>May 2020 - May 2021</div>
                         Diploma in Computer Science <br></br>
                         Weighted Average Mark: 74.7% <br></br>
                         Awarded the UNSW Global Diploma Scholarship in 2020 and 2021
                     </div>
                 </ResContent>
             </ResContainer>
-            {/* <ResContainer>
-                <div>
-                    <div>
-                        UNSW ASEAN Society IT Associate<br></br>
-                        Redesigned and implemented the frontend for the "Partners" and "Our Team" page in the society's 2021 flagship event website for which I was awarded the President’s Choice Award in September 2021 <br></br>
-                        Collaborated virtually with a team of ~50 members to organise the UNSW ASEAN Conference, a large scale 2-day online conference which attracted over 1700+ participants from multiple countries. <br></br>
-                        Moderated and managed the livestream of the conference using OBS on Youtube and Vimeo.
-                    </div>
-                    <div>
-                        Privasec Hackcelerator Mentorship 2021<br></br>
-                        A cybersecurity mentorship which included technical meetings discussing the latest methods used in penetration testing.<br></br>
-                        Gained insight and experience into the daily workflow of a cybersecurity consultant.
-                    </div>
-                </div>
-                <div>Experience</div>
-            </ResContainer>
             <ResContainer>
+                <ResContent>
+                    <div style={{fontSize: 23, color: 'black'}}>
+                        UNSW ASEAN Society IT Associate<br></br>
+                    </div>
+                    <div style={{fontSize: 18, color: '#4285F4'}}>June 2021 - Present</div>
+                    <div style={{fontSize: 20, paddingTop: 20, fontWeight: 500}}>UNSW ASEAN Conference 2021 (UAC)</div>
+                    <div style={{paddingTop: 20, paddingBottom: 20}}>
+                        Redesigned and implemented the frontend for the "Partners" and <br></br>"Our Team" page in the society's 2021 flagship event website <br></br> for which I was awarded  the President’s Choice Award in September 2021. <br></br>
+                    </div>
+                    <div style={{paddingTop: 20, paddingBottom: 20}}>
+                        Collaborated virtually with a team of ~50 members to organise the <br></br> UNSW ASEAN Conference, a large scale 2-day online conference which <br></br> attracted over 1700+ participants from multiple countries. <br></br>
+                    </div>
+                    <div style={{paddingTop: 20, paddingBottom: 20}}>
+                        Moderated and managed the livestream of the conference using OBS on <br></br> Youtube and Vimeo.
+                    </div>
+                    <div style={{fontSize: 20, paddingTop: 20, fontWeight: 500}}>ASEAN Society Website</div>
+                    <div style={{paddingTop: 20, paddingBottom: 40}}>
+                        Collaborated with a team of 3 members to design the frontend of the society's <br></br> official website.<br></br>
+                    </div>
+
+                    {/*  */}
+                    <div style={{fontSize: 23, color: 'black'}}>
+                        Privasec Hackcelerator Mentorship 2021<br></br>
+                    </div>
+                    <div style={{fontSize: 18, color: '#4285F4'}}>September 2021 - Present</div>
+                    <div style={{paddingTop: 20, paddingBottom: 20}}>
+                        A cybersecurity mentorship with Privasec (now known as Sekuro) which included <br></br> weekly technical meetings discussing the following topics: 
+                        <ul style={{paddingLeft: 40}}>
+                            <li>Setting up a Ubuntu server</li>
+                            <li>Securing a server and web application</li>
+                            <li>Hardening and defending a server</li>
+                            <li>Penetration testing methods</li>
+                            <li>Indicators of Compromise (IOCs)</li>
+                            <li>Drone Security</li>
+                            <li>Virtual Machines and Hacking Labs</li>
+                            <li>Analysing and collating IOCs</li>
+                            <li>Documenting findings from a successful penetration test</li>
+                        </ul>
+                    </div>
+                    <div style={{paddingTop: 20, paddingBottom: 20}}>Completed a minor and major cybersecurity project (more details below) which <br></br> revolved around the theme of Governance and IOCs.</div>
+                </ResContent>
+                
+                <div id='experience' style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center', textAlign: 'center', fontFamily: 'lyon-display-web', fontWeight: 'bold', fontSize:35}}>
+                    <div style={{fontSize: 50}}><Emoji style={emojiStyle} symbol="💼" className="waving-hand"></Emoji> </div>Experience
+                </div>
+            </ResContainer>
+            {/* <ResContainer>
                 <div>Certificates</div>
                 <div>
                     <div>
@@ -98,8 +129,8 @@ const Resume = () => {
                         JPMorgan Chase & Co. Software Engineering Virtual Experience<br></br>
                     </div>
                 </div>
-            </ResContainer>
-            <ResContainer>
+            </ResContainer> */}
+            {/* <ResContainer>
                 <div>Projects</div>
                 <div>
                     <div>
@@ -125,8 +156,8 @@ const Resume = () => {
                         Simulated an attack on a Windows machine using Mimikatz and a Metasploit Meterpreter reverse shell while analysing indicators of compromise using Sysmon when Windows Defender is turned off.
                     </div>
                 </div>
-            </ResContainer>
-            <ResContainer>
+            </ResContainer> */}
+            {/* <ResContainer>
                 <div>Skills</div>
                 <div>
                     <div>
