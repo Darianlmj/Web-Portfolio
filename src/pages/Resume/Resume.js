@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { ResContainer, ResSummary, ResName, ResIntro, ResNavBar, ResContent } from "./ResumeElements";
 import Asset3 from "../../images/Asset3.jpeg"
 import './index.css'
-import { Divider } from '@mui/material';
+import { Divider, Button } from '@mui/material';
 import Anchor from '../../components/Anchor/Anchor.js'
 import Emoji from "../../components/Emoji/Emoji";
 import { position } from "dom-helpers";
@@ -130,33 +130,90 @@ const Resume = () => {
                     </div>
                 </div>
             </ResContainer> */}
-            {/* <ResContainer>
-                <div>Projects</div>
-                <div>
-                    <div>
-                        UNSW Streams <br></br>
-                        A collaborative communications platform intended to facilitate teaching and studies during the COVID-19 pandemic.
-                        Built using python, the application features the ability to create channels/dms, get notifications, tag other users, summon a multipurpose bot in channels and perform administrative privileges such as removing messages and users. The application's data is also able to persist and can handle concurrent sessions.
-                        Collaborated with 5 members following Agile practices such as version control, standups and issue tracking using Jira.
-                    </div>
-                    <div>
-                        Portfolio Website<br></br>
-                        A static website featuring multiple pages and the ability to resize responsively depending on the aspect ratio of the current screen. 
-                        Built using React.js and deployed using Heroku.
-                    </div>
-                    <div>
-                        Privasec Minor Project<br></br>
-                        Managed, defended and hardened access to an Ubuntu server by restricting server access, configuring DNS records, SSL patching.
-                        Configured and deployed a Wordpress LAMP stack website while focusing on maintaining security.
-                        Employed penetration testing methods to discover vulnerabilities and compromise similar servers of other mentees using NESSUS and Nikto.
-                    </div>
-                    <div>
-                        Privasec Major Project<br></br>
-                        Deployed a malware/lab testing environment using Kali Linux and Windows 11 system.
-                        Simulated an attack on a Windows machine using Mimikatz and a Metasploit Meterpreter reverse shell while analysing indicators of compromise using Sysmon when Windows Defender is turned off.
-                    </div>
+            <ResContainer>
+                <div id='projects' style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center', textAlign: 'center', fontFamily: 'lyon-display-web', fontWeight: 'bold', fontSize:35}}>
+                    <div style={{fontSize: 50}}><Emoji style={emojiStyle} symbol="🔧" className="waving-hand"></Emoji> </div>Projects
                 </div>
-            </ResContainer> */}
+
+                <div>
+                    <ResContent>
+                        <div style={{fontSize: 23, color: 'black'}}>
+                            UNSW Streams<br></br>
+                        </div>
+                        <div style={{fontSize: 18, color: '#4285F4'}}>September 2021 - Present</div>
+                        <div style={{paddingTop: 20, paddingBottom: 20}}>
+                            A collaborative communications platform intended to facilitate teaching <br></br>and studies during the COVID-19 pandemic.<br></br>
+                        </div>
+                        <div style={{paddingTop: 10, paddingBottom: 10}}>
+                            Built using python, the application contains the following features:
+                            <ul style={{paddingLeft: 40}}>
+                                <li>Create channels or dms</li> 
+                                <li>Get notifications</li>  
+                                <li>Tag other users</li>  
+                                <li>Summon a multipurpose bot in channels</li>  
+                                <li>Administrative privileges removing messages and users</li> 
+                                <li>Persistant data storage</li> 
+                                <li>Can handle concurrent sessions</li> 
+                                <li>Statistical analysis and tracking</li> 
+                            </ul> 
+                        </div>
+                        <div style={{paddingTop: 10, paddingBottom: 40}}>
+                            Collaborated with 5 members following Agile practices such as version control,<br></br> standups and issue tracking using Jira.
+                        </div>
+                    
+                        <div>
+                            <div style={{fontSize: 23, color: 'black'}}>
+                                Portfolio Website<br></br>
+                            </div>
+                            <div style={{fontSize: 18, color: '#4285F4'}}>August 2021 - Present</div>
+                            <div style={{paddingTop: 10, paddingBottom: 10}}>
+                                A static "portfolio" style website which you are currently viewing this on.
+                            </div>
+                            <div style={{paddingTop: 10, paddingBottom: 10}}>
+                                Built using React.js and deployed using Heroku, this website contains the <br></br>following features:
+                                <ul style={{paddingLeft: 40}}>
+                                    <li>Multiple pages (some are currently under construction)</li> 
+                                    <li>Content resizes responsively to changing aspect-ratio</li>  
+                                </ul> 
+                            </div>
+                            <div style={{textAlign: 'center', paddingBottom: 60}}>
+                                <Button sx={{"&.MuiButtonBase-root:hover": {
+                                                color: "white"
+                                            }}} 
+                                        href='https://github.com/Darianlmj/Web-Portfolio' 
+                                        variant="contained">More Info</Button>
+                            </div>
+                        </div>
+                    <div>
+                        <div style={{fontSize: 23, color: 'black'}}>
+                                Privasec Minor Project<br></br>
+                        </div>
+                        <div style={{fontSize: 18, color: '#4285F4'}}>September 2021 - November 2021</div>
+                        <div style={{paddingTop: 10, paddingBottom: 10}}>
+                            Managed, defended and hardened access to an Ubuntu server by restricting <br></br> server access, configuring DNS records, SSL patching.
+                        </div>
+                        <div style={{paddingTop: 10, paddingBottom: 10}}>
+                            Configured and deployed a Wordpress LAMP stack website while focusing on <br></br> maintaining security.
+                        </div>
+                        <div style={{paddingTop: 10, paddingBottom: 40}}>
+                            Employed penetration testing methods to discover vulnerabilities and compromise <br></br> similar servers of other mentees using NESSUS and Nikto.
+                        </div>
+                    </div>
+                    <div>
+                        <div style={{fontSize: 23, color: 'black'}}>
+                            Privasec Major Project<br></br>
+                        </div>
+                        <div style={{fontSize: 18, color: '#4285F4'}}>October 2021 - December 2021</div>
+                        <div style={{paddingTop: 10, paddingBottom: 10}}>
+                            Deployed a malware/lab testing environment using Kali Linux and Windows 11 system.
+                        </div>
+                        <div style={{paddingTop: 10, paddingBottom: 20}}>
+                            Simulated an attack on a Windows machine using Mimikatz and a Metasploit <br></br> Meterpreter reverse shell while analysing indicators of compromise using Sysmon <br></br> when Windows Defender is turned off.
+                        </div>
+                    </div>
+                    </ResContent>
+                </div>
+            </ResContainer>
             {/* <ResContainer>
                 <div>Skills</div>
                 <div>
