@@ -1,10 +1,13 @@
-import React from 'react'
-import { FaCentercode } from 'react-icons/fa';
+import React, { useEffect } from "react";
 import Emoji from "../../components/Emoji/Emoji";
 import './index.css'
 import { ConstructionTitle } from "./UnderConstructionElements"
 
 const UnderConstruction = () => {
+    useEffect(() => {
+        document.title = "503 | Darianlmj";  
+    }, []);
+
     const emojiContainer = {
         textAlign: 'center',
         fontSize: 100, 
