@@ -18,10 +18,11 @@
 }
 
 .intro-card-title {
+  padding-top: 60px;
   text-align: left;
   margin-left: 30%;
   margin-right: 25%;
-  font-size: 58px;
+  font-size: 65px;
   letter-spacing: 0.05rem;
   font-family: 'lyon-display-web';/*'Mulish', -apple-system, sans-serif;*/
   font-weight: 800;
@@ -31,21 +32,19 @@
 }
 
 .intro-card-excerpt h2, .intro-2 h2{
-  padding-top: 30px;
   margin-left: 34%;
   margin-right: 10%;
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 500;
   line-height: 60px;
   letter-spacing: .5px;
   text-align: left;
-  font-family: 'lyon-display-web';
-  background: #303538;  /* fallback for old browsers */
-  background-clip: text;
+  color: #595757;  /* fallback for old browsers */
+  /* background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation-delay: -1s;
-  animation: AnimateSplash 1.5s ease infinite;
+  animation: AnimateSplash 1.5s ease infinite; */
 }
 
 .intro-post {

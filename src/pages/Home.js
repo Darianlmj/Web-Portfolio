@@ -15,7 +15,7 @@ const Home = () => {
                     <article>                        
                         <div className="intro-post">
                             <h1 className="intro-card-title">
-                                <Emoji symbol="👋🏼" className="waving-hand"></Emoji> Hey There! I'm Darian
+                                 Hey There! I'm Darian
                             </h1>
                             <section className="intro-card-excerpt">
                                 <IntroAnimation></IntroAnimation>
