@@ -1,6 +1,6 @@
+import './index.css'
 import React, { useEffect } from "react";
 import Emoji from "../../components/Emoji/Emoji";
-import './index.css'
 import { ConstructionTitle } from "./UnderConstructionElements"
 
 const UnderConstruction = () => {
@@ -29,11 +29,9 @@ const UnderConstruction = () => {
                 <ConstructionTitle>Page is Currently under Construction</ConstructionTitle>
                 <div className='ConstructionInfo'>
                     Thanks for visiting. Please check back soon.<br></br>
-                    <div style={{fontSize: 25, paddingTop: 20}}>FLaG&#123;H3Y_ThEr3_Y0U_F0uND_Me&#125;</div>
+                    <div style={{fontSize: 25, paddingTop: 20}}>FLaG&#123;H3Y_ThEr3_Y0U_F0uND_M3&#125;</div>
                 </div>
-                
             </div>
-            
         </div>
     )
 }
