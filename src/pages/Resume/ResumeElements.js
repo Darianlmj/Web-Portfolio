@@ -54,3 +54,18 @@ export const ResContentHorizontal = styled.div`
     font-size: 18px;
     color: #777777;
 `
+
+export const HeaderEmoji = styled.div`
+    font-size: 50px;
+`
+
+export const HeaderContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: lyon-display-web;
+    font-weight: bold;
+    font-size: 35px
+`
