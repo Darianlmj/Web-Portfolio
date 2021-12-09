@@ -12,7 +12,6 @@
   text-align: center;
   box-shadow: 1px 1px 1px 20px rgb(222 225 229 / 15%), 
               1px 1px 1px rgb(222 225 229 / 15%);
-  /* transform: translateY(-450px); */
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 70%);
   overflow: visible;
   z-index: 1;
@@ -165,6 +164,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+}
+
+.NavBarMenu a:hover {
+  color: #fffafa;
 }
 
 .NavBarMenu a:link {
