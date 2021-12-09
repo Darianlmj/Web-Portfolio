@@ -1,6 +1,5 @@
 import React from "react";
 import { IntroAnimation, IntroAnimation2 } from "../components/Animation/IntroAnimation"
-import Emoji from "../components/Emoji/Emoji";
 import ProfilePic from "../images/ProfilePic.png"
 
 const Home = () => {
