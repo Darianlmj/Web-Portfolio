@@ -6,7 +6,6 @@ export const ResContainer = styled.div`
     padding-left: 3%;
     padding-right: 3%;
     margin: 0 auto;
-    /* border: solid; */
     justify-content: space-between;
 `
 
@@ -38,6 +37,18 @@ export const ResNavBar = styled.div`
 `
 
 export const ResContent = styled.div`
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 18px;
+    color: #777777;
+`
+
+export const ResContentHorizontal = styled.div`
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(1200px - (50px * 2));
+    text-align: center;
+    margin: 0 auto;
     padding-top: 70px;
     padding-bottom: 70px;
     font-size: 18px;

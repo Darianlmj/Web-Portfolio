@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import { ResContainer, ResSummary, ResName, ResIntro, ResContent } from "./ResumeElements";
+import { ResContainer, ResSummary, ResName, ResIntro, ResContent, ResContentHorizontal } from "./ResumeElements";
 import './index.css'
 import HorizontalTimeline from "../../components/Timeline/Timeline";
 import { Button } from '@mui/material';
@@ -112,20 +112,49 @@ const Resume = () => {
                     <div style={{fontSize: 50}}><Emoji style={emojiStyle} symbol="💼" className="waving-hand"></Emoji> </div>Experience
                 </a>
             </ResContainer>
-            {/* <ResContainer>
-                <div>Certificates</div>
-                <div>
-                    <div>
-                        ANZ CyberSecurity Virtual Experience <br></br>
+            <div>
+                <a id='certifications' style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center', textAlign: 'center', fontFamily: 'lyon-display-web', fontWeight: 'bold', fontSize:35}}>
+                    <div style={{fontSize: 50}}><Emoji style={emojiStyle} symbol="📜" className="waving-hand"></Emoji> </div>Certifications
+                </a>
+                <ResContentHorizontal>
+                    <div style={{fontSize: 23, color: 'black'}}>
+                        ANZ <br></br> CyberSecurity <br></br> Virtual Experience <br></br>
+                        <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>May 2021</div>
+                        <Button sx={{background:"#4285F4", "&.MuiButtonBase-root:hover": {
+                                                color: "white"
+                                            }}} 
+                                        href='https://insidesherpa.s3.amazonaws.com/completion-certificates/ANZ/Hf4QMESoFeQwXPsiH_ANZ_n5asg4o9GxcagEW86_completion_certificate.pdf' 
+                                        variant="contained">More Info</Button>
                     </div>
-                    <div>
-                        Genius Armoury Introduction to Cybersecurity Virtual Experience Program<br></br>
+                    <div style={{fontSize: 23, color: 'black'}}>
+                        Genius Armoury <br></br> Introduction to Cybersecurity <br></br>Virtual Experience Program<br></br>
+                        <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>May 2021</div>
+                        <Button sx={{background:"#4285F4", "&.MuiButtonBase-root:hover": {
+                                                color: "white"
+                                            }}} 
+                                        href='https://insidesherpa.s3.amazonaws.com/completion-certificates/Genius%20Armoury%20%28GA%29/avbGLNY7iDcHLDeJk_Genius%20Armoury%20%28GA%29_n5asg4o9GxcagEW86_completion_certificate.pdf' 
+                                        variant="contained">More Info</Button>
                     </div>
-                    <div>
-                        JPMorgan Chase & Co. Software Engineering Virtual Experience<br></br>
+                    <div style={{fontSize: 23, color: 'black'}}>
+                        JPMorgan Chase & Co. <br></br> Software Engineering <br></br> Virtual Experience<br></br>
+                        <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>May 2021</div>
+                        <Button sx={{background:"#4285F4", "&.MuiButtonBase-root:hover": {
+                                                color: "white"
+                                            }}} 
+                                        href='https://insidesherpa.s3.amazonaws.com/completion-certificates/JP%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan%20Chase_n5asg4o9GxcagEW86_completion_certificate.pdf' 
+                                        variant="contained">More Info</Button>
                     </div>
-                </div>
-            </ResContainer> */}
+                    <div style={{fontSize: 23, color: 'black'}}>
+                        Google <br></br>Kick Start <br></br> Competition
+                        <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>November 2021</div>
+                        <Button sx={{background:"#4285F4", "&.MuiButtonBase-root:hover": {
+                                                color: "white"
+                                            }}} 
+                                        href='https://codingcompetitions.withgoogle.com/kickstart/certificate/summary/0000000000435bad' 
+                                        variant="contained">More Info</Button>
+                    </div>
+                </ResContentHorizontal>
+            </div>
             <ResContainer>
                 <div id='projects' style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center', textAlign: 'center', fontFamily: 'lyon-display-web', fontWeight: 'bold', fontSize:35}}>
                     <div style={{fontSize: 50}}><Emoji style={emojiStyle} symbol="🔧" className="waving-hand"></Emoji> </div>Projects
