@@ -1,0 +1,15 @@
+.underConstructionPage {
+    aspect-ratio: 2.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ConstructionInfo {
+    max-width: calc(1200px - (50px * 2));
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    color: #6C6C6C;
+    padding-bottom: 70px;
+}

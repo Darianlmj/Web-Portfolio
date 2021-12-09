@@ -12,9 +12,9 @@ const NavBar = ({ toggle }) => {
                 </MobileIcon>             
                 <NavMenu className="NavBarMenu">
                     <a href="/">Home</a>
-                    <a href="/#/about">About Me</a>
-                    <a href="/#/resume">Resume</a>
-                    <a href="/">Posts</a>
+                    <a href="/about">About Me</a>
+                    <a href="/resume">Resume</a>
+                    <a href="/posts">Posts</a>
                 </NavMenu>                             
                 <a className="NavBarBrand" href="/">
                     <TypeWriterEffect
