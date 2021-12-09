@@ -3,6 +3,7 @@
                               Intro Postcard
 
  -------------------------------------------------------------------------- */
+ /* FLaG{HMm_1_D1dnT_Th1Nk_Y0Ud_Ch3Ck_H3RE} */
 .intro-card {
   padding-top: 50px;
   position: relative;
@@ -27,8 +28,6 @@
   font-family: 'lyon-display-web';/*'Mulish', -apple-system, sans-serif;*/
   font-weight: 800;
   color: #303538;
-  
-  /* text-transform: uppercase; */
 }
 
 .intro-card-excerpt h2, .intro-2 h2{
@@ -40,11 +39,6 @@
   letter-spacing: .5px;
   text-align: left;
   color: #595757;  /* fallback for old browsers */
-  /* background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation-delay: -1s;
-  animation: AnimateSplash 1.5s ease infinite; */
 }
 
 .intro-post {
