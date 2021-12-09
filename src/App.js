@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About/About';
 import Posts from "./pages/Posts/Posts";
 import Resume from './pages/Resume/Resume';
-import PageNotFound from "./pages/PageNotFound";
+import PageNotFound from "./pages/404NotFound/PageNotFound";
 import UnderConstruction from "./pages/UnderConstruction/UnderConstruction";
 
 function App() {
