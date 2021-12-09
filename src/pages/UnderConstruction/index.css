@@ -11,5 +11,13 @@
     text-align: center;
     font-size: 2rem;
     color: #6C6C6C;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
+}
+
+.constructionContainer {
+    max-width: calc(1100px - (50px * 2));
+    margin: 0 auto;
+    border-style: 2px solid;
+  	border-radius: 15px;
+  	box-shadow: 8px 14px 38px rgba(55 75 129 / 10%), 1px 3px 8px rgba(55 75 129 / 10%);
 }
