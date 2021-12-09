@@ -1,6 +1,6 @@
 # How I made my Website
 
-Hello Hello! By the fact that you are here, I take it that you are interested in web-development and in particular – how this website was made. No worries, because hopefully, after you finish reading this short lil' article, you will have some ideas on where to start building your own. Also, please feel free to check out my [website](https://darianlmj.herokuapp.com).
+Hello Hello! By the fact that you are here, I take it that you are interested in web-development and in particular – how this website was made. No worries, because hopefully, after you finish reading this short lil' article, you will have some ideas on where to start building your own. Also, please feel free to check out my [website](https://darianlmj.herokuapp.com). If you are familiar with CTF challenges, there are a few flags just lying around the place – 3 to be precise, but I'll add more when I have the time. You don't need any sort of security knowledge to find them, just having an adventerous spirit would do.
 
 *Disclaimer: I am by no means an expert at this, everything that is written here is based on my own personal experiences. I am still learning more about front-end web development.*
 
@@ -55,6 +55,7 @@ For those of you who are keen on starting your web development journey, here are
 - [Linking Pages using React Router](https://www.youtube.com/watch?v=Law7wfdg_ls)
 - [React Hook to change page's title](https://devdojo.com/krissanawat101/3-ways-to-set-a-document-title-in-react)
 - [Using BrowserRouter for Heroku](https://stackoverflow.com/questions/41772411/react-routing-works-in-local-machine-but-not-heroku)
+- [Anchor Tags](https://dev.to/gedalyakrycer/5-remarkable-react-router-features-anchor-links-query-params-more-2aeg#anchorLinks)
 
 ### Miscellaneous
 
