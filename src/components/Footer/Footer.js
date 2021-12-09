@@ -9,8 +9,9 @@ const Footer = () => {
                     <div className="col-md-6 item text">
                         <h3>Thanks For Visiting</h3>
                         <p>
-                           This website is a product of my love for front-end web development and has taken me a lot of
-                           time to create so you being here in my little corner of the internet means a lot to me. 
+                           This website is a product of my love for frontend web development and security. 
+                           If you are familiar with CTF challenges, there are a few flags lying around for you to find.
+                           In the meantime, please don't hesistate to reach out anytime.
                         </p>
                     </div>
                     <div className="col-sm-6 col-md-3 item">
