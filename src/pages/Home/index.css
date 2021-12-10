@@ -12,7 +12,7 @@
     line-height: 60px;
     letter-spacing: .5px;
     text-align: left;
-    color: #595757;  /* fallback for old browsers */
+    color: #595757; 
 }
   
 .intro-post {
@@ -36,6 +36,7 @@
     line-height: 1.2;
     color: #ffffff;
     margin-bottom: 2.5rem;
+    text-shadow: 0 10px 30px rgba(2, 11, 22, 0.3);
 }
 
 .intro {
