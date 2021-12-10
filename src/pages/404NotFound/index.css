@@ -1,4 +1,5 @@
 .notFoundPage {
+    background-color: #fffdfa;
     aspect-ratio: 2.2;
     display: flex;
     flex-direction: column;
