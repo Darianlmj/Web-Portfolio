@@ -1,11 +1,13 @@
-# How I made my Website
+# How I made my Website 🔧
 
-Hello Hello! By the fact that you are here, I take it that you are interested in web-development and in particular – how this website was made. No worries, because hopefully, after you finish reading this short lil' article, you will have some ideas on where to start building your own. Also, please feel free to check out my [website](https://darianlmj.herokuapp.com). If you are familiar with CTF challenges, there are a few flags just lying around the place – 3 to be precise, but I'll add more when I have the time. You don't need any sort of security knowledge to find them, just having an adventerous spirit would do.
+Hello there! 👋🏼
 
-*Disclaimer: I am by no means an expert at this, everything that is written here is based on my own personal experiences. I am still learning more about front-end web development.*
+By the fact that you are here, I take it that you are interested in web-development and in particular – how this website was made. No worries, because hopefully, after you finish reading this short lil' article, you will have some ideas on where to start building your own. Also, please feel free to check out my [website](https://darianlmj.herokuapp.com). If you are familiar with CTF challenges, there are a few flags just lying around the place – 3 to be precise, but I'll add more when I have the time. You don't need any sort of security knowledge to find them, just having an adventerous spirit would do.
+
+_Disclaimer: I am by no means an expert at this, everything that is written here is based on my own personal experiences. I am still learning more about frontend web development. You may also notice similarities in the styling for certains elements in the website. These are all a result of me having bad UI skills and just needing practice on designing. As such, please do not sue me. Thanks 😊_
 
 
-## Brief Overview
+## 🚀 Brief Overview
 
 - Languages Used
 - Websites Used
@@ -15,20 +17,19 @@ Hello Hello! By the fact that you are here, I take it that you are interested in
 - Miscellaneous
 
 
-Just before we get into the rest of this article, I wanted to give you a brief overview about this website. Before the whole website built commenced, I had no prior experience. The only things I did know was some basic HTML and CSS syntax but that was pretty much it. Naturally, I opted to start out with an old school way of building websites, which were by using the following languages:
+Just before we get into the rest of this article, I wanted to give you a brief overview about this website. Before the whole website built commenced, I had no prior experience. The only things I did know was some basic HTML and CSS syntax but that was pretty much it. Naturally, I opted to start out with an old school way of building websites, which were by using HTML, CSS and Vanilla JavaScript.
 
+However, as I started to get more experience and discovering new and better ways of making this project easier, I decided to completely start over by switching to a JavaScript library called **Reactjs** to make this website cause I heard that it makes life easier in the long run. But don't worry, there's actually plenty of similarities in the syntax if you take a look at the source code.
 
-## Languages Used
+## 🧑🏻‍🏫 Languages Used
 
 - Reactjs
 - HTML
 - CSS
 
-However, as I started to get more experience and discovering new and better ways of making this project easier, I decided to start over by switching to a JavaScript library called **Reactjs** to make this website cause I've heard that it makes life easier in the long run. But don't worry, there's actually plenty of similarities in the syntax if you take a look at the source code.
+## 🌐 Websites Used
 
-## Websites Used
-
-For those of you who are keen on starting your web development journey, here are a few lists of the various websites I drew the inspiration for this website from. Whether it's "how to format things a certain way" or "how to change the colour of this"; there are always tons of help out there and this is just represents a small subset of that. Just keep in mind that a large majority of building this website was just Google-ing things that I didn't know how to do (like literally 80% of it) so if I can do it — you can too!
+For those of you who are keen on starting your web development journey, here's a list of the various websites I drew inspiration from. Whether it's "how to format things a certain way" or "how to change the colour of this"; there are always tons of help out there and this is just represents a small subset of that. Just keep in mind that a large majority of building this website was just Google-ing things that I didn't know how to do (like literally 80% of it) so if I can do it — you can too!
 
 ### Design and Format Inspiration
 
@@ -61,3 +62,5 @@ For those of you who are keen on starting your web development journey, here are
 
 - [License](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/licensing-a-repository)
 - [Deploy React.js app to Github pages](https://www.youtube.com/watch?v=1wDzEjXbblM)
+
+If you have made it this far, I really appreciate the time you have taken to read through this and feel free to contact me anytime if you have any other questions.
