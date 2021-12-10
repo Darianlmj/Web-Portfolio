@@ -18,9 +18,9 @@ const Footer = () => {
                         <h3>Find Out More</h3>
                         <ul>
                             <li><a href="/">Home</a></li>
-                            <li><a href="/#/about">About Me</a></li>
-                            <li><a href="/#/resume">Resume</a></li>
-                            <li><a href="/">Posts</a></li>
+                            <li><a href="/about">About Me</a></li>
+                            <li><a href="/resume">Resume</a></li>
+                            <li><a href="/posts">Posts</a></li>
                         </ul>
                     </div>
                 </div>
