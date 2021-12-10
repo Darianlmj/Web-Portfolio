@@ -13,7 +13,7 @@ const IntroAnimation = () => {
     })
 
     return (
-        <animated.h2 className="intro-card-excerpt" style={props}> # <span style={{color: '#34A824'}}>Computer Science</span> Student</animated.h2>
+        <animated.h2 className="intro-card-excerpt" style={{props, fontFamily: 'futura-medium', color: '#fff', fontSize: '1.8rem'}}> <span style={{color: '#ff4d5a'}}>//</span> Computer Science Student</animated.h2>
     )
 }
 
@@ -29,7 +29,7 @@ const IntroAnimation2 = () => {
     })
   
     return (
-        <animated.h2 className="intro-2" style={props}> # <span style={{color: '#EA4325'}}>Security</span>  Junkie and <span style={{color: '#4285F4'}}>Web-Dev</span> Enthusiast</animated.h2>
+        <animated.h2 className="intro-2" style={{props, fontFamily: 'futura-medium', color: '#fff', fontSize: '1.8rem'}}> <span style={{color: '#ff4d5a'}}>//</span> Security Junkie and Web-Dev Enthusiast</animated.h2>
     )
 }
 

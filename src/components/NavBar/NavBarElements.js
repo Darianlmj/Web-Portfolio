@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-    background: #383C44; //rgb(232, 240, 252);
+    background: linear-gradient(to right, #101828, #2c425b);
     height: 80px;
     display: flex;
     justify-content: space-between;

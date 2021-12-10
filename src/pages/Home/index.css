@@ -1,0 +1,140 @@
+.inner {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10%;
+    background: linear-gradient(to right, #101828, #2c425b);
+    aspect-ratio: 2.2;
+}
+
+.intro-excerpt h2, .intro-2 h2{
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: .5px;
+    text-align: left;
+    color: #595757;  /* fallback for old browsers */
+}
+  
+.intro-post {
+    margin: auto;
+    overflow: hidden;
+    margin: auto;
+}
+
+.planet {
+    width: 50%;
+    height: 100%;
+    overflow: visible;
+    z-index: 2;
+    transform: translateY(-150px);
+}
+
+.intro-title {
+    font-family: futura-medium;
+    font-size: 8rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+}
+
+.intro {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .intro {
+        margin: 0;
+    }
+
+    .inner {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 150px;
+        padding-bottom: 20px;
+    }
+    
+    .intro-title {
+        font-size: 50px;
+        margin-left: 0;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .intro-excerpt h2 {
+        margin: 0;
+        text-align: left;
+        padding-left: 30px;
+        font-size: 40px;
+    }
+
+    .intro-2 h2 {
+        margin: 0;
+        text-align: left;
+        font-size: 40px;
+        padding-left: 30px;
+    }
+
+    img.planet {
+        position: absolute;
+        transform: translateY(-280px);
+    }
+
+}
+
+/* ----------- Iphone Screen Reponsiveness ----------- */
+@media only screen and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .intro-title {
+        font-size: 50px;
+    }
+
+    .intro-excerpt h2 {
+        font-size: 40px;
+        overflow-wrap: break-word;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .inner {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 150px;
+    }
+}
+
+/* ----------- Ipad Portrait and Landscape ----------- */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (min-device-width: 834px) 
+and (max-device-width: 1112px)
+and (-webkit-min-device-pixel-ratio: 1)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .intro {
+        margin: 0;
+    }
+
+    .intro-title {
+        font-size: 50px;
+    }
+
+    .intro-excerpt h2 {
+        font-size: 45px;
+        overflow-wrap: break-word;
+    }
+
+    .inner {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 400px;
+        padding-bottom: 80px;
+    }
+
+    img.planet {
+        position: absolute;
+        transform: translateY(-350px);
+    }
+}

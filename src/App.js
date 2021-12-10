@@ -4,7 +4,7 @@ import NavBar from './components/NavBar';
 import SideBar from './components/SideBar';
 import Footer from './components/Footer/Footer';
 
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Posts from "./pages/Posts/Posts";
 import Resume from './pages/Resume/Resume';

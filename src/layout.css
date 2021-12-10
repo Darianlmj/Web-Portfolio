@@ -25,26 +25,3 @@ img.responsive {
     text-align: center;
     margin: auto;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.outer {  
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 60px;
-    padding-right: 60px;
-}
-
-.inner {
-    padding-top: 10%;
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3a7bd5, #085078 /*#2c3e50*/); /*Chrome 10-25, Safari 5.1-6*/
-    background: linear-gradient(to right, #3a7bd5, #085078 /*#2c3e50*/);
-    aspect-ratio: 2.2;
-}
-
-
