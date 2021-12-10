@@ -195,7 +195,7 @@ const Resume = () => {
                             and studies during the COVID-19 pandemic.<br></br>
                         </div>
                         <div style={{paddingTop: 10, paddingBottom: 10}}>
-                            Built using python, the application contains the following features:
+                            Built with Python and uses a RESTful API, the application contains the following features:
                             <ul style={{paddingLeft: 40}}>
                                 <li>Create channels or dms</li> 
                                 <li>Get notifications</li>  
