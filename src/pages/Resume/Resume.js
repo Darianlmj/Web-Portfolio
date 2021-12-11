@@ -37,12 +37,12 @@ const Resume = () => {
                         aspiring frontend web developer and security enthusiast.
                     </ResSummary>
                 </ResIntro> 
-                <div style={emojiContainer}>
+                <div className="responsive-res-emoji" style={emojiContainer}>
                     <Emoji style={emojiStyle} symbol="👋🏼"/>
                 </div>
             </ResContainer>
             <HorizontalTimeline/>
-            <ResContainer>
+            <ResContainer className="responsive-section">
                 <div></div>
                 <HeaderContainer id="education">
                     <HeaderEmoji>
@@ -119,7 +119,6 @@ const Resume = () => {
                         revolved around the theme of Governance and IOCs.
                     </div>
                 </ResContent>
-                
                 <HeaderContainer id="experience">
                     <HeaderEmoji>
                         <Emoji style={emojiStyle} symbol="💼"/> 
@@ -127,57 +126,57 @@ const Resume = () => {
                     Experience
                 </HeaderContainer>
             </ResContainer>
-            <div>
+            <div className="responsive-section">
                 <HeaderContainer id="certifications">
                     <HeaderEmoji>
                         <Emoji style={emojiStyle} symbol="📜"/>
                     </HeaderEmoji>
                     Certifications
                 </HeaderContainer>
-                <ResContentHorizontal>
-                    <div style={{fontSize: 23, color: 'black'}}>
-                        ANZ <br></br> CyberSecurity <br></br> Virtual Experience <br></br>
-                        <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>May 2021</div>
-                        <Button sx={{background:"#4285F4", 
-                                     "&.MuiButtonBase-root:hover": {
-                                        color: "white"
-                                    }}} 
-                                href='https://insidesherpa.s3.amazonaws.com/completion-certificates/ANZ/Hf4QMESoFeQwXPsiH_ANZ_n5asg4o9GxcagEW86_completion_certificate.pdf' 
-                                variant="contained">More Info</Button>
-                    </div>
-                    <div style={{fontSize: 23, color: 'black'}}>
-                        Genius Armoury <br></br> Introduction to Cybersecurity <br></br>Virtual Experience Program<br></br>
-                        <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>May 2021</div>
-                        <Button sx={{background:"#4285F4", 
-                                     "&.MuiButtonBase-root:hover": {
-                                        color: "white"
-                                    }}} 
-                                    href='https://insidesherpa.s3.amazonaws.com/completion-certificates/Genius%20Armoury%20%28GA%29/avbGLNY7iDcHLDeJk_Genius%20Armoury%20%28GA%29_n5asg4o9GxcagEW86_completion_certificate.pdf' 
+                <ResContentHorizontal className="responsive-certification">
+                        <div className="certificate" style={{fontSize: 23, color: 'black'}}>
+                            ANZ <br></br> CyberSecurity <br></br> Virtual Experience <br></br>
+                            <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>May 2021</div>
+                            <Button sx={{background:"#4285F4", 
+                                        "&.MuiButtonBase-root:hover": {
+                                            color: "white"
+                                        }}} 
+                                    href='https://insidesherpa.s3.amazonaws.com/completion-certificates/ANZ/Hf4QMESoFeQwXPsiH_ANZ_n5asg4o9GxcagEW86_completion_certificate.pdf' 
                                     variant="contained">More Info</Button>
-                    </div>
-                    <div style={{fontSize: 23, color: 'black'}}>
-                        JPMorgan Chase & Co. <br></br> Software Engineering <br></br> Virtual Experience<br></br>
-                        <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>May 2021</div>
-                        <Button sx={{background:"#4285F4", 
-                                     "&.MuiButtonBase-root:hover": {
-                                        color: "white"
-                                    }}} 
-                                    href='https://insidesherpa.s3.amazonaws.com/completion-certificates/JP%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan%20Chase_n5asg4o9GxcagEW86_completion_certificate.pdf' 
-                                    variant="contained">More Info</Button>
-                    </div>
-                    <div style={{fontSize: 23, color: 'black'}}>
-                        Google <br></br>Kick Start <br></br> Competition
-                        <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>November 2021</div>
-                        <Button sx={{background:"#4285F4", 
-                                     "&.MuiButtonBase-root:hover": {
-                                        color: "white"
-                                    }}} 
-                                    href='https://codingcompetitions.withgoogle.com/kickstart/certificate/summary/0000000000435bad' 
-                                    variant="contained">More Info</Button>
-                    </div>
+                        </div>
+                        <div className="certificate" style={{fontSize: 23, color: 'black'}}>
+                            Genius Armoury <br></br> Introduction to Cybersecurity <br></br>Virtual Experience Program<br></br>
+                            <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>May 2021</div>
+                            <Button sx={{background:"#4285F4", 
+                                        "&.MuiButtonBase-root:hover": {
+                                            color: "white"
+                                        }}} 
+                                        href='https://insidesherpa.s3.amazonaws.com/completion-certificates/Genius%20Armoury%20%28GA%29/avbGLNY7iDcHLDeJk_Genius%20Armoury%20%28GA%29_n5asg4o9GxcagEW86_completion_certificate.pdf' 
+                                        variant="contained">More Info</Button>
+                        </div>
+                        <div className="certificate" style={{fontSize: 23, color: 'black'}}>
+                            JPMorgan Chase & Co. <br></br> Software Engineering <br></br> Virtual Experience<br></br>
+                            <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>May 2021</div>
+                            <Button sx={{background:"#4285F4", 
+                                        "&.MuiButtonBase-root:hover": {
+                                            color: "white"
+                                        }}} 
+                                        href='https://insidesherpa.s3.amazonaws.com/completion-certificates/JP%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan%20Chase_n5asg4o9GxcagEW86_completion_certificate.pdf' 
+                                        variant="contained">More Info</Button>
+                        </div>
+                        <div className="certificate" style={{fontSize: 23, color: 'black'}}>
+                            Google <br></br>Kick Start <br></br> Competition
+                            <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>November 2021</div>
+                            <Button sx={{background:"#4285F4", 
+                                        "&.MuiButtonBase-root:hover": {
+                                            color: "white"
+                                        }}} 
+                                        href='https://codingcompetitions.withgoogle.com/kickstart/certificate/summary/0000000000435bad' 
+                                        variant="contained">More Info</Button>
+                        </div>
                 </ResContentHorizontal>
             </div>
-            <ResContainer>
+            <ResContainer className="responsive-section">
                 <HeaderContainer>
                     <HeaderEmoji id="projects">
                         <Emoji style={emojiStyle} symbol="🔧"/>
@@ -313,8 +312,7 @@ const Resume = () => {
                     <i class="fas fa-arrow-circle-up fa-2x"></i>
                 </Link>
             </div>
-        </div>
-        
+        </div>  
     )
 }
 
