@@ -2,19 +2,19 @@
     display: flex;
     justify-content: space-evenly;
     padding-top: 10%;
+    padding-bottom: 45px;
     background: linear-gradient(to right, #101828, #2c425b);
-    aspect-ratio: 2.2;
 }
 
-.intro-excerpt h2, .intro-2 h2{
-    font-size: 32px;
+.intro-excerpt h2, .intro-2 h2 {
+    font-size: 27px;
     font-weight: 500;
     line-height: 60px;
     letter-spacing: 1px;
     text-align: left;
     font-family: 'futura-medium';
     color: #ffffff;
-    font-size: '1.8rem'
+    font-size: '1.8rem';
 }
   
 .intro-post {
@@ -25,7 +25,7 @@
 
 .planet {
     width: 50%;
-    height: 100%;
+    height: auto;
     overflow: visible;
     z-index: 2;
     transform: translateY(-150px);
@@ -87,15 +87,22 @@
 }
 
 /* ----------- Iphone Screen Reponsiveness ----------- */
-@media only screen and (min-device-width: 320px) 
-and (max-device-width: 480px)
+@media only screen and (max-device-width: 375px) 
+and (max-device-height: 812px)
 and (-webkit-min-device-pixel-ratio: 2) {
     .intro-title {
         font-size: 50px;
     }
 
     .intro-excerpt h2 {
-        font-size: 40px;
+        font-size: 30px;
+        overflow-wrap: break-word;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .intro-2 h2 {
+        font-size: 30px;
         overflow-wrap: break-word;
         text-align: left;
         padding-left: 30px;
@@ -104,16 +111,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .inner {
         flex-direction: column;
         align-items: center;
-        padding-top: 150px;
+        /* padding-top: 150px; */
     }
 }
 
 /* ----------- Ipad Portrait and Landscape ----------- */
-@media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px) 
-and (min-device-width: 834px) 
-and (max-device-width: 1112px)
+@media only screen and (min-device-width: 500px) 
+and (max-device-width: 768px) 
+and (max-device-height: 1024px) 
 and (-webkit-min-device-pixel-ratio: 1)
 and (-webkit-min-device-pixel-ratio: 2) {
     .intro {
@@ -122,10 +127,54 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
     .intro-title {
         font-size: 50px;
+        text-align: center;
     }
 
     .intro-excerpt h2 {
-        font-size: 45px;
+        font-size: 30px;
+        overflow-wrap: break-word;
+    }
+
+    .intro-2 h2 {
+        font-size: 30px;
+        overflow-wrap: break-word;
+    }
+
+    .inner {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 400px;
+        padding-bottom: 80px;
+    }
+
+    img.planet {
+        position: absolute;
+        transform: translateY(-350px);
+    }
+}
+
+/* ----------- Ipad Pro Portrait and Landscape ----------- */
+@media only screen 
+and (min-device-width: 1024px) 
+and (min-device-height: 1336px)
+and (-webkit-min-device-pixel-ratio: 1)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .intro {
+        margin: 0;
+    }
+
+    .intro-title {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .intro-excerpt h2 {
+        font-size: 30px;
+        overflow-wrap: break-word;
+    }
+
+    .intro-2 h2 {
+        font-size: 30px;
         overflow-wrap: break-word;
     }
 
