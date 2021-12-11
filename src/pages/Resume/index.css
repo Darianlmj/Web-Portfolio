@@ -16,46 +16,6 @@ a:hover {
     color: #6C6C6C;
 }
 
-@media only screen and (max-width: 768px) {
-    .intro {
-        margin: 0;
-    }
-
-    .inner {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 150px;
-        padding-bottom: 20px;
-    }
-    
-    .intro-title {
-        font-size: 50px;
-        margin-left: 0;
-        text-align: center;
-        margin-right: 0;
-    }
-
-    .intro-excerpt h2 {
-        margin: 0;
-        text-align: left;
-        padding-left: 30px;
-        font-size: 40px;
-    }
-
-    .intro-2 h2 {
-        margin: 0;
-        text-align: left;
-        font-size: 40px;
-        padding-left: 30px;
-    }
-
-    img.planet {
-        position: absolute;
-        transform: translateY(-280px);
-    }
-
-}
-
 /* ----------- Iphone Screen Reponsiveness ----------- */
 @media only screen and (max-device-width: 375px) 
 and (max-device-height: 812px)

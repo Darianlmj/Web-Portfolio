@@ -1,8 +1,8 @@
 .inner {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 10%;
-    padding-bottom: 45px;
+    padding-top: 8%;
+    padding-bottom: 100px;
     background: linear-gradient(to right, #101828, #2c425b);
 }
 
@@ -28,7 +28,7 @@
     height: auto;
     overflow: visible;
     z-index: 2;
-    transform: translateY(-150px);
+    transform: translateY(-100px);
 }
 
 .intro-title {
@@ -111,7 +111,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .inner {
         flex-direction: column;
         align-items: center;
-        /* padding-top: 150px; */
+    }
+
+    img.planet {
+        position: absolute;
+        transform: translateY(-300px);
     }
 }
 
