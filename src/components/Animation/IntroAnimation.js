@@ -2,7 +2,7 @@
     import { useSpring, animated, config } from 'react-spring'
 
     const IntroAnimation = () => {
-    const [flip, set] = useState(false)
+    const [flip] = useState(false)
     const props = useSpring({
         to: { opacity: 1 },
         from: { opacity: 0 },
@@ -14,13 +14,13 @@
 
     return (
         <animated.h2 className="intro-excerpt" style={props}> 
-        <span style={{color: '#ff4d5a'}}>//</span> Computer Science Student
+        <span style={{color: '#ff4d5a'}}>&#47;&#47;</span> Computer Science Student
         </animated.h2>
     )
     }
 
     const IntroAnimation2 = () => {
-    const [flip, set] = useState(false)
+    const [flip] = useState(false)
     const props = useSpring({
         to: { opacity: 1 },
         from: { opacity: 0 },
@@ -32,7 +32,7 @@
 
     return (
         <animated.h2 className="intro-2"style={props}> 
-        <span style={{color: '#ff4d5a'}}>//</span> Security Junkie and Web-Dev Enthusiast
+        <span style={{color: '#ff4d5a'}}>&#47;&#47;</span> Security Junkie and Web-Dev Enthusiast
         </animated.h2>
     )
     }
