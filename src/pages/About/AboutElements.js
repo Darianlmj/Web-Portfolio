@@ -15,6 +15,6 @@ export const AboutTitle = styled.div`
 export const AboutBody = styled.div`
     display: flex;
     justify-content: space-evenly;
-    padding-top: 50px;
+    padding-top: 40px;
 `
 

@@ -19,7 +19,7 @@ const About = () => {
     return (
         <div style={{backgroundColor: '#fffdfa'}}>
             <Container maxWidth="xl" sx={{paddingTop: 10, paddingBottom: 10}}>
-                <AboutHeader>
+                <AboutHeader className="aboutHeaderContainer">
                     <img className="profileImage" src={ProfilePic} alt="Hey! It's Me"></img>
                     <div style={{display: 'flex', flexDirection: 'column', alignContent: 'center', justifyContent: 'center'}}>
                         <AboutTitle>
@@ -36,8 +36,8 @@ const About = () => {
                         </div>
                     </div>
                 </AboutHeader>
-                <AboutBody>
-                    <Card sx={{minWidth: 275, padding: 3, borderRadius: 3}} raised="true">
+                <AboutBody className="aboutBodyContainer">
+                    <Card sx={{minWidth: 275, padding: 3, borderRadius: 3, marginBottom: 3}} raised="true">
                         <Typography id="about" variant='h4' sx={{fontFamily: 'lyon-display-web', fontWeight: 800, paddingBottom: 1}}>Fluffy Doge</Typography>
                         <Divider sx={{marginBottom: 2}} />
                         <Typography variant='body1' sx={{color: '#777777'}}>
@@ -54,7 +54,7 @@ const About = () => {
                             <a href="https://www.instagram.com/maxisacavoodle/"> Instagram</a>. <br/>
                         </Typography>
                     </Card>
-                    <Card sx={{minWidth: 275, padding: 3, borderRadius: 3}} raised="true">
+                    <Card classname="about-card" sx={{minWidth: 275, padding: 3, borderRadius: 3, marginBottom: 3}} raised="true">
                         <Typography variant='h4' sx={{fontFamily: 'lyon-display-web', fontWeight: 800, paddingBottom: 1}}>Space</Typography>
                         <Divider sx={{marginBottom: 2}} />
                         <Typography variant='body1' sx={{color: '#777777'}}>
@@ -72,8 +72,8 @@ const About = () => {
                         </Typography>
                     </Card>
                 </AboutBody>
-                <AboutBody>
-                    <Card sx={{minWidth: 275, padding: 3, borderRadius: 3}} raised="true">
+                <AboutBody style={{paddingTop: 0}} className="aboutBodyContainer">
+                    <Card classname="about-card" sx={{minWidth: 275, padding: 3, borderRadius: 3, marginBottom: 3}} raised="true">
                         <Typography variant='h4' sx={{fontFamily: 'lyon-display-web', fontWeight: 800, paddingBottom: 1}}>TV Shows</Typography>
                         <Divider sx={{marginBottom: 2}} />
                         <Typography variant='body1' sx={{color: '#777777'}}>
@@ -89,7 +89,7 @@ const About = () => {
                             How I Met Your Mother &#62; Friends 
                         </Typography>
                     </Card>
-                    <Card sx={{minWidth: 275, padding: 3, borderRadius: 3}} raised="true">
+                    <Card classname="about-card" sx={{minWidth: 275, padding: 3, borderRadius: 3, marginBottom: 3}} raised="true">
                         <Typography variant='h4' sx={{fontFamily: 'lyon-display-web', fontWeight: 800, paddingBottom: 1}}>Music</Typography>
                         <Divider sx={{marginBottom: 2}} />
                         <Typography variant='body1' sx={{color: '#777777'}}>
