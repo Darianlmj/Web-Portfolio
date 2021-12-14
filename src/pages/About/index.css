@@ -1,44 +1,51 @@
-.shape {
-    content: ''; 
-    height: 65vh; 
-    width: 90vw; 
-    left: 5vw; 
-    position: absolute; 
-    margin: auto;
-    /* padding: 50px;  */
-    z-index: -1;
-}
-
-.shape1 {
-    background-color: grey; 
-    clip-path: polygon(81% 10%, 88% 50%, 71% 98%, 36% 82%);
-    transform: translateX(-150px);
-}
-
-.shape2 {
-    background-color: coral; 
-    clip-path: polygon(46% -10%, 114% 49%, 77% 100%, 36% 65%);
-    transform: translateX(-150px);
-}
-
-.shape3 {
-    background-color: lightpink; 
-    clip-path: polygon(16% 12%, 37% 15%, 45% 5%, 72% 66%, 14% 93%, 0% 41%, 6% 35%);
-    transform: translateX(-80px);
-}
-
 .profileImage {
-    height: 600px;
-    transform: translate(420px, -230px);
-    margin: auto;
+    width: 40%;
 }
 
 .AboutInfo {
     width: 400px;
 }
 
-@media screen and (max-width: 1960px) {
-    .shape {
-        padding: auto;
+/* ----------- Iphone Screen Reponsiveness ----------- */
+@media only screen and (max-device-width: 375px) 
+and (max-device-height: 812px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .aboutHeaderContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutBodyContainer {
+        flex-direction: column;
+    }
+    
+    .about-card {
+        margin-top: 30px;
+    }
+
+    .profileImage {
+        width: 70%;
+    }
+}
+
+/* ----------- Ipad Portrait and Landscape ----------- */
+@media only screen and (min-device-width: 500px) 
+and (max-device-width: 768px) 
+and (max-device-height: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .aboutBodyContainer {
+        flex-direction: column;
+    }
+}
+
+/* ----------- Ipad Pro Portrait and Landscape ----------- */
+@media only screen 
+and (min-device-width: 1024px) 
+and (min-device-height: 1336px)
+and (-webkit-min-device-pixel-ratio: 1)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .aboutBodyContainer {
+        flex-direction: column;
     }
 }
