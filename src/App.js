@@ -24,7 +24,7 @@ function App() {
       <NavBar toggle={toggle} />
       <Switch>
         <Route path='/' component={Home} exact/>
-        <Route path='/about' component={UnderConstruction} exact/>
+        <Route path='/about' component={About} exact/>
         <Route path='/resume' component={Resume} exact/>
         <Route path='/posts' component={UnderConstruction} exact/>
         <Route component={PageNotFound} />

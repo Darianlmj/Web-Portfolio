@@ -1,27 +1,20 @@
 import styled from "styled-components"
 
-export const AboutContainer = styled.div `
+export const AboutHeader = styled.div `
+    display: flex;
+    justify-content: space-evenly;
     align-content: center;
-
-`
-
-export const AboutImage = styled.div`
-    margin: 10px;
-    
-
 `
 
 export const AboutTitle = styled.div`
-    margin-left: 30px;
-    /* float: left; */
-    font-size: 130px;
-    font-weight: bold;
-    font-family: "something wild";
+    font-family: lyon-display-web;
+    font-size: 55px;
+    font-weight: 800;
 `
 
-export const AboutExcerpt = styled.div`
-    margin-left: 30px;
-    font-size: 25px;
-    font-weight: bold;
-    z-index: 1;
+export const AboutBody = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
 `
+
