@@ -341,3 +341,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
       margin-top:20px;
   }
 }
+
+
+
+
+
+
+
+.post-link:hover {
+  color: #4285F4;
+  text-decoration: none;
+}
