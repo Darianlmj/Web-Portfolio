@@ -7,9 +7,10 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Posts from "./pages/Posts/Posts";
+import Website101 from "./pages/Post/Website101";
 import Resume from './pages/Resume/Resume';
 import PageNotFound from "./pages/404NotFound/PageNotFound";
-// import UnderConstruction from "./pages/UnderConstruction/UnderConstruction";
+import UnderConstruction from "./pages/UnderConstruction/UnderConstruction";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,6 +28,8 @@ function App() {
         <Route path='/about' component={About} exact/>
         <Route path='/resume' component={Resume} exact/>
         <Route path='/posts' component={Posts} exact/>
+        <Route path='/post/1' component={Website101} exact/>
+        <Route path='/post/2' component={UnderConstruction} exact/>
         <Route component={PageNotFound} />
       </Switch>
       <Footer />
