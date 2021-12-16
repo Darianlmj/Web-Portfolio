@@ -57,13 +57,11 @@ const Resume = () => {
                         </div>
                         <div style={{fontSize: 18, color: '#4285F4'}}>June 2021 - Present</div>
                         Bachelor of Computer Science   <br></br>
-                        Weighted Average Mark: 73.2%
                     </div>
                     <div>
                         <div style={{fontSize: 23, color: 'black'}}>University of New South Wales Global</div>
                         <div style={{fontSize: 18, color: '#4285F4'}}>May 2020 - May 2021</div>
                         Diploma in Computer Science <br></br>
-                        Weighted Average Mark: 74.7% <br></br>
                         Awarded the UNSW Global Diploma Scholarship in 2020 and 2021
                     </div>
                 </ResContent>
@@ -92,7 +90,7 @@ const Resume = () => {
                     <div style={{fontSize: 20, paddingTop: 20, fontWeight: 500}}>ASEAN Society Website</div>
                     <div style={{paddingTop: 20, paddingBottom: 40}}>
                         Collaborated with a team of 3 members to design the frontend of the society's <br></br> 
-                        official website.<br></br>
+                        official website using React.<br></br>
                     </div>
 
                     <div style={{fontSize: 23, color: 'black'}}>
