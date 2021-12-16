@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import { Container, Typography, Card, Divider, Grid } from "@mui/material";
+import Emoji from "../../components/Emoji/Emoji";
 import getPosts from "./PostsData";
+import { Link } from 'react-router-dom';
+import './index.css'
 
 const Posts = () => {
     useEffect(() => {
@@ -11,22 +14,28 @@ const Posts = () => {
 
     return (
         <Container maxWidth="md" sx={{paddingTop: 5}}>
-            <Typography sx={{fontSize: 80, fontFamily: 'lyon-display-web', fontWeight: 800}}>Posts</Typography>
+            <Typography sx={{fontSize: 80, fontFamily: 'lyon-display-web', fontWeight: 800}}>
+                Posts &nbsp;
+                <Emoji  symbol="📬"/>
+            </Typography>
             <Typography sx={{color: '#777777'}}>
-                An insight into some of the projects I've worked on. Typically, 
-                these projects take a considerable amount of time to complete but I aim to 
-                write up one post a month. Hope you understand.
+                This page contains insight into some of the projects I've worked on. Typically, 
+                these projects take a considerable amount of time to make so the frequency of which posts 
+                are churned out may not be very frequent. However, I aim to write up at least one post a month.
+                Hope you understand.
             </Typography>
 
             <Grid container spacing={2} sx={{justifyContent: 'space-evenly', marginTop: 6, marginBottom: 6}}>
                 {posts.map((post) => (
                     <Grid  xs={5}>
-                        <Card to={`/posts/${post.id}`} sx={{padding: 3, borderRadius: 3, minHeight: 290}}>
-                            <Typography sx={{fontSize: '1.2rem', color: '#4285F4'}}>{post.tag}</Typography>
-                            <Typography sx={{fontSize: '2rem'}}>{post.title}</Typography>
-                            <Divider sx={{paddingTop: 1, marginBottom: 1}} />
-                            <Typography variant='p' sx={{color: '#777777'}}>{post.description}</Typography>
-                        </Card>
+                        <Link to={`/post/${post.id}`} style={{ textDecoration: 'none' }}>
+                            <Card className="postcard" sx={{padding: 3, borderRadius: 3, minHeight: 290}}>
+                                <Typography sx={{fontSize: '1.1rem', color: '#4285F4'}}>{post.tag}</Typography>
+                                <Typography sx={{fontSize: '2rem'}}>{post.title}</Typography>
+                                <Divider sx={{paddingTop: 1, marginBottom: 1.3}} />
+                                <Typography variant='p' sx={{color: '#777777'}}>{post.description}</Typography>
+                            </Card>
+                        </Link>
                     </Grid>
                 ))}
             </Grid>

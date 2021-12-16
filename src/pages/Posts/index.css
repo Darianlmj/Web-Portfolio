@@ -1,0 +1,5 @@
+.postcard:hover {
+    box-shadow: 8px 28px 50px rgb(39 44 49 / 7%), 1px 6px 12px rgb(39 44 49 / 4%);
+    transition: all .4s ease;
+    transform: translate3D(0,-0.5px,0) scale(1.00);
+}
