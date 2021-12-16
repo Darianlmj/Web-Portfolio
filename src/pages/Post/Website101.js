@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Container, Typography, Divider } from "@mui/material";
 import Emoji from "../../components/Emoji/Emoji";
 import "../../index"
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Post = () => {
     useEffect(() => {
@@ -47,12 +48,12 @@ const Post = () => {
                 </Typography>
                 <Typography sx={{fontSize: '1.1rem', color: '#777777'}}>
                     <ul>
-                        <li>Languages Used</li>
-                        <li>Websites Used</li>
-                        <li>Design and Format Inspiration</li>
-                        <li>Syntactical Queries</li>
-                        <li>Styles, Illustrations, Images and Fonts</li>
-                        <li>Miscellaneous</li>
+                        <li><Link className="post-link" to="#languages-used">Languages Used</Link></li>
+                        <li><Link className="post-link" to="#websites-used">Websites Used</Link></li>
+                        <li><Link className="post-link" to="#design-and-format-inspiration">Design and Format Inspiration</Link></li>
+                        <li><Link className="post-link" to="#syntactical-queries">Syntactical Queries</Link></li>
+                        <li><Link className="post-link" to="#styles-illustrations-images-and-fonts">Styles, Illustrations, Images and Fonts</Link></li>
+                        <li><Link className="post-link" to="#miscellaneous">Miscellaneous</Link></li>
                     </ul>
                 </Typography>
                 <Typography sx={{fontSize: '1.1rem', color: '#777777', marginBottom: 2}}>
@@ -71,7 +72,7 @@ const Post = () => {
                     <br/>
                 </Typography>
 
-                <Typography sx={{fontSize: '1.7rem', fontWeight: 600, marginBottom: 1.5}}>
+                <Typography id="languages-used" sx={{fontSize: '1.7rem', fontWeight: 600, marginBottom: 1.5}}>
                     <Emoji  symbol="📚 &#09;"/>
                     Languages Used
                 </Typography>
@@ -84,7 +85,7 @@ const Post = () => {
                 </Typography>
 
 
-                <Typography sx={{fontSize: '1.7rem', fontWeight: 600, marginBottom: 1.5}}>
+                <Typography id="websites-used" sx={{fontSize: '1.7rem', fontWeight: 600, marginBottom: 1.5}}>
                     <Emoji  symbol="🌐 &#09;"/>
                     Websites Used
                 </Typography>
@@ -99,7 +100,7 @@ const Post = () => {
                     <br/>
                 </Typography>
 
-                <Typography sx={{fontSize: '1.3rem', fontWeight: 600, marginBottom: 1.5}}>
+                <Typography id="design-and-format-inspiration" sx={{fontSize: '1.3rem', fontWeight: 600, marginBottom: 1.5}}>
                     Design and Format Inspiration
                 </Typography>
                 <Typography>
@@ -114,7 +115,7 @@ const Post = () => {
                     </ul>
                 </Typography>
 
-                <Typography sx={{fontSize: '1.3rem', fontWeight: 600}}>
+                <Typography id="styles-illustrations-images-and-fonts" sx={{fontSize: '1.3rem', fontWeight: 600}}>
                     Styles, Illustrations, Images and Fonts
                 </Typography>
                 <Typography>
@@ -130,7 +131,7 @@ const Post = () => {
                     </ul>
                 </Typography>
 
-                <Typography sx={{fontSize: '1.3rem', fontWeight: 600}}>
+                <Typography id="syntactical-queries" sx={{fontSize: '1.3rem', fontWeight: 600}}>
                     Syntactical Queries
                 </Typography>
                 <Typography>
@@ -145,7 +146,7 @@ const Post = () => {
                     </ul>
                 </Typography>
 
-                <Typography sx={{fontSize: '1.3rem', fontWeight: 600}}>
+                <Typography id="miscellaneous" sx={{fontSize: '1.3rem', fontWeight: 600}}>
                     Miscellaneous
                 </Typography>
                 <Typography>
@@ -161,7 +162,12 @@ const Post = () => {
                     to read through this and feel free to contact me anytime if you have any 
                     other questions or if you are curious about how I made a specific part of the website.
                 </Typography>
-                
+
+                <div className='backToTop' style={{marginTop: 50}}>
+                    <Link style={{color: '#777777'}} to='#top'>
+                        <i class="fas fa-arrow-circle-up fa-2x"></i>
+                    </Link>
+                </div>
             </Container>
         </div>
     )

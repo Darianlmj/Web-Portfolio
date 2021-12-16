@@ -346,7 +346,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
 
 
-
+.post-link {
+  color: #4285F4;
+}
 
 .post-link:hover {
   color: #4285F4;
