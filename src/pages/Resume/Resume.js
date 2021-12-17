@@ -23,7 +23,7 @@ const Resume = () => {
     }
     
     return (
-        <div style={{backgroundColor:'#fffdfa'}}>
+        <div style={{paddingBottom: 10}}>
             <ResContainer style={{justifyContent: 'space-around'}}>
                 <ResIntro>
                     <div id='top' className="res-greeting">
