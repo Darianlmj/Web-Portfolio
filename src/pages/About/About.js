@@ -26,7 +26,7 @@ const About = () => {
                             Hey There! <Emoji style={emojiStyle} symbol="🚀"/> 
                         </AboutTitle>
                         <Typography sx={{fontWeight: 500, fontSize: 20, color: '#777777', paddingBottom: 5}}>
-                            Really nice to meet you. If you are interested in knowing a little more about me, scroll down to
+                            Really nice to meet you. If you are interested in knowing a little more about me,
                             check out some of my interests. <br/>
                         </Typography>
                         <div className='backToTop'>
