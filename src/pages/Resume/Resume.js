@@ -23,7 +23,7 @@ const Resume = () => {
     }
     
     return (
-        <div style={{paddingBottom: 10}}>
+        <div style={{backgroundColor:'#fffdfa', paddingBottom: 10}}>
             <ResContainer style={{justifyContent: 'space-around'}}>
                 <ResIntro>
                     <div id='top' className="res-greeting">
@@ -33,7 +33,7 @@ const Resume = () => {
                         Darian Lee Ming Jian
                     </ResName>
                     <ResSummary>
-                        Second year computer science student, <br></br>
+                        Second year computer science student, <br/>
                         aspiring frontend web developer and security enthusiast.
                     </ResSummary>
                 </ResIntro> 
@@ -56,12 +56,12 @@ const Resume = () => {
                             University of New South Wales 
                         </div>
                         <div style={{fontSize: 18, color: '#4285F4'}}>June 2021 - Present</div>
-                        Bachelor of Computer Science   <br></br>
+                        Bachelor of Computer Science   <br/>
                     </div>
                     <div>
                         <div style={{fontSize: 23, color: 'black'}}>University of New South Wales Global</div>
                         <div style={{fontSize: 18, color: '#4285F4'}}>May 2020 - May 2021</div>
-                        Diploma in Computer Science <br></br>
+                        Diploma in Computer Science <br/>
                         Awarded the UNSW Global Diploma Scholarship in 2020 and 2021
                     </div>
                 </ResContent>
@@ -69,37 +69,37 @@ const Resume = () => {
             <ResContainer>
                 <ResContent>
                     <div style={{fontSize: 23, color: 'black'}}>
-                        UNSW ASEAN Society IT Associate<br></br>
+                        UNSW ASEAN Society IT Associate<br/>
                     </div>
                     <div style={{fontSize: 18, color: '#4285F4'}}>June 2021 - Present</div>
                     <div style={{fontSize: 20, paddingTop: 20, fontWeight: 500}}>UNSW ASEAN Conference 2021 (UAC)</div>
                     <div style={{paddingTop: 20, paddingBottom: 20}}>
-                        Redesigned and implemented the frontend for the "Partners" and <br></br>
-                        "Our Team" page in the society's 2021 flagship event website <br></br> 
-                        for which I was awarded  the President’s Choice Award in September 2021. <br></br>
+                        Redesigned and implemented the frontend for the "Partners" and <br/>
+                        "Our Team" page in the society's 2021 flagship event website <br/> 
+                        for which I was awarded  the President’s Choice Award in September 2021. <br/>
                     </div>
                     <div style={{paddingTop: 20, paddingBottom: 20}}>
-                        Collaborated virtually with a team of ~50 members to organise the <br></br> 
-                        UNSW ASEAN Conference, a large scale 2-day online conference which <br></br> 
-                        attracted over 1700+ participants from multiple countries. <br></br>
+                        Collaborated virtually with a team of ~50 members to organise the <br/> 
+                        UNSW ASEAN Conference, a large scale 2-day online conference which <br/> 
+                        attracted over 1700+ participants from multiple countries. <br/>
                     </div>
                     <div style={{paddingTop: 20, paddingBottom: 20}}>
-                        Moderated and managed the livestream of the conference using OBS on <br></br> 
+                        Moderated and managed the livestream of the conference using OBS on <br/> 
                         Youtube and Vimeo.
                     </div>
                     <div style={{fontSize: 20, paddingTop: 20, fontWeight: 500}}>ASEAN Society Website</div>
                     <div style={{paddingTop: 20, paddingBottom: 40}}>
-                        Collaborated with a team of 3 members to design the frontend of the society's <br></br> 
-                        official website using React.<br></br>
+                        Collaborated with a team of 3 members to design the frontend of the society's <br/> 
+                        official website using React.<br/>
                     </div>
 
                     <div style={{fontSize: 23, color: 'black'}}>
-                        Privasec Hackcelerator Mentorship 2021<br></br>
+                        Sekuro Hackcelerator Mentorship<br/>
                     </div>
                     <div style={{fontSize: 18, color: '#4285F4'}}>September 2021 - Present</div>
                     <div style={{paddingTop: 20, paddingBottom: 20}}>
-                        A cybersecurity mentorship with Privasec (now known as Sekuro) which included <br></br> 
-                        weekly technical meetings discussing the following topics: 
+                        A cybersecurity mentorship with Sekuro which included weekly <br/>
+                        technical meetings  discussing the following topics: 
                         <ul style={{paddingLeft: 40}}>
                             <li>Setting up a Ubuntu server</li>
                             <li>Securing a server and web application</li>
@@ -113,7 +113,7 @@ const Resume = () => {
                         </ul>
                     </div>
                     <div style={{paddingTop: 20, paddingBottom: 20}}>
-                        Completed a minor and major cybersecurity project (more details below) which <br></br>
+                        Completed a minor and major cybersecurity project (more details below) which <br/>
                         revolved around the theme of Governance and IOCs.
                     </div>
                 </ResContent>
@@ -133,7 +133,7 @@ const Resume = () => {
                 </HeaderContainer>
                 <ResContentHorizontal className="responsive-certification">
                         <div className="certificate" style={{fontSize: 23, color: 'black'}}>
-                            ANZ <br></br> CyberSecurity <br></br> Virtual Experience <br></br>
+                            ANZ <br/> CyberSecurity <br/> Virtual Experience <br/>
                             <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>May 2021</div>
                             <Button sx={{background:"#4285F4", 
                                         "&.MuiButtonBase-root:hover": {
@@ -143,7 +143,7 @@ const Resume = () => {
                                     variant="contained">More Info</Button>
                         </div>
                         <div className="certificate" style={{fontSize: 23, color: 'black'}}>
-                            Genius Armoury <br></br> Introduction to Cybersecurity <br></br>Virtual Experience Program<br></br>
+                            Genius Armoury <br/> Introduction to Cybersecurity <br/>Virtual Experience Program<br/>
                             <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>May 2021</div>
                             <Button sx={{background:"#4285F4", 
                                         "&.MuiButtonBase-root:hover": {
@@ -153,7 +153,7 @@ const Resume = () => {
                                         variant="contained">More Info</Button>
                         </div>
                         <div className="certificate" style={{fontSize: 23, color: 'black'}}>
-                            JPMorgan Chase & Co. <br></br> Software Engineering <br></br> Virtual Experience<br></br>
+                            JPMorgan Chase & Co. <br/> Software Engineering <br/> Virtual Experience<br/>
                             <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>May 2021</div>
                             <Button sx={{background:"#4285F4", 
                                         "&.MuiButtonBase-root:hover": {
@@ -163,7 +163,7 @@ const Resume = () => {
                                         variant="contained">More Info</Button>
                         </div>
                         <div className="certificate" style={{fontSize: 23, color: 'black'}}>
-                            Google <br></br>Kick Start <br></br> Competition
+                            Google <br/>Kick Start <br/> Competition
                             <div style={{fontSize: 18, color: '#4285F4', paddingBottom: 30}}>November 2021</div>
                             <Button sx={{background:"#4285F4", 
                                         "&.MuiButtonBase-root:hover": {
@@ -184,12 +184,12 @@ const Resume = () => {
                 <div>
                     <ResContent>
                         <div style={{fontSize: 23, color: 'black'}}>
-                            UNSW Streams<br></br>
+                            UNSW Streams<br/>
                         </div>
                         <div style={{fontSize: 18, color: '#4285F4'}}>September 2021 - Present</div>
                         <div style={{paddingTop: 20, paddingBottom: 20}}>
-                            A collaborative communications platform intended to facilitate teaching <br></br>
-                            and studies during the COVID-19 pandemic.<br></br>
+                            A collaborative communications platform intended to facilitate teaching <br/>
+                            and studies during the COVID-19 pandemic.<br/>
                         </div>
                         <div style={{paddingTop: 10, paddingBottom: 10}}>
                             Built with Python and uses a RESTful API, the application contains the following features:
@@ -206,24 +206,24 @@ const Resume = () => {
                             </ul> 
                         </div>
                         <div style={{paddingTop: 10, paddingBottom: 40}}>
-                            Collaborated with 5 members following Agile practices such as version control,<br></br> 
+                            Collaborated with 5 members following Agile practices such as version control,<br/> 
                             standups and issue tracking using Jira.
                         </div>
                     
                         <div>
                             <div style={{fontSize: 23, color: 'black'}}>
-                                Portfolio Website<br></br>
+                                Portfolio Website<br/>
                             </div>
                             <div style={{fontSize: 18, color: '#4285F4'}}>August 2021 - Present</div>
                             <div style={{paddingTop: 10, paddingBottom: 10}}>
                                 A static "portfolio" style website which you are currently viewing this on.
                             </div>
                             <div style={{paddingTop: 10, paddingBottom: 10}}>
-                                Built using React.js and deployed using Heroku, this website contains the <br></br>
+                                Built using React.js and deployed using Heroku, this website contains the <br/>
                                 following features:
                                 <ul style={{paddingLeft: 40}}>
                                     <li>Multiple pages (some are currently under construction)</li> 
-                                    <li>Content resizes responsively to changing aspect-ratio</li>  
+                                    <li>Responsive content that resizes based on changing aspect-ratio</li>  
                                 </ul> 
                             </div>
                             <div style={{textAlign: 'center', paddingBottom: 60}}>
@@ -236,33 +236,33 @@ const Resume = () => {
                         </div>
                     <div>
                         <div style={{fontSize: 23, color: 'black'}}>
-                                Privasec Minor Project<br></br>
+                                Sekuro Minor Project<br/>
                         </div>
                         <div style={{fontSize: 18, color: '#4285F4'}}>September 2021 - November 2021</div>
                         <div style={{paddingTop: 10, paddingBottom: 10}}>
-                            Managed, defended and hardened access to an Ubuntu server by restricting <br></br> 
+                            Managed, defended and hardened access to an Ubuntu server by restricting <br/> 
                             server access, configuring DNS records, SSL patching.
                         </div>
                         <div style={{paddingTop: 10, paddingBottom: 10}}>
-                            Configured and deployed a Wordpress LAMP stack website while focusing on <br></br> 
+                            Configured and deployed a Wordpress LAMP stack website while focusing on <br/> 
                             maintaining security.
                         </div>
                         <div style={{paddingTop: 10, paddingBottom: 40}}>
-                            Employed penetration testing methods to discover vulnerabilities and compromise <br></br> 
+                            Employed penetration testing methods to discover vulnerabilities and compromise <br/> 
                             similar servers of other mentees using NESSUS and Nikto.
                         </div>
                     </div>
                     <div>
                         <div style={{fontSize: 23, color: 'black'}}>
-                            Privasec Major Project<br></br>
+                            Sekuro Major Project<br/>
                         </div>
                         <div style={{fontSize: 18, color: '#4285F4'}}>October 2021 - December 2021</div>
                         <div style={{paddingTop: 10, paddingBottom: 10}}>
                             Deployed a malware/lab testing environment using Kali Linux and Windows 11 system.
                         </div>
                         <div style={{paddingTop: 10, paddingBottom: 20}}>
-                            Simulated an attack on a Windows machine using Mimikatz and a Metasploit <br></br> 
-                            Meterpreter reverse shell while analysing indicators of compromise using Sysmon <br></br> 
+                            Simulated an attack on a Windows machine using Mimikatz and a Metasploit <br/> 
+                            Meterpreter reverse shell while analysing indicators of compromise using Sysmon <br/> 
                             when Windows Defender is turned off.
                         </div>
                     </div>
@@ -274,7 +274,7 @@ const Resume = () => {
                 <ResContent>
                     <div>
                         <div style={{fontSize: 23, color: 'black'}}>
-                            Programming Languages <br></br>
+                            Programming Languages <br/>
                         </div>
                         <div style={{paddingTop: 10, paddingBottom: 20}}>
                             Python, C, HTML, CSS, Javascript, React.js
@@ -282,7 +282,7 @@ const Resume = () => {
                     </div>
                     <div>
                         <div style={{fontSize: 23, color: 'black'}}>
-                            Technical Skills<br></br>
+                            Technical Skills<br/>
                         </div>
                         <div style={{paddingTop: 10, paddingBottom: 20}}>
                             Git, Github, Figma, Nessus, Wordpress, VirtualBox
@@ -290,7 +290,7 @@ const Resume = () => {
                     </div>
                     <div>
                         <div style={{fontSize: 23, color: 'black'}}>
-                            Languages<br></br>
+                            Languages<br/>
                         </div>
                         <div style={{paddingTop: 10, paddingBottom: 20}}>
                             Proficient English and Conversational Malay
