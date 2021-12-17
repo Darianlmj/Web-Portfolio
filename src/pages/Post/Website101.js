@@ -10,7 +10,7 @@ const Post = () => {
     }, []);
 
     return (
-        <div>
+        <div style={{backgroundColor:'#fffdfa', paddingBottom: 1}}>
             <Container maxWidth="md" sx={{paddingTop: 5, marginBottom: 10}}>
                 <Typography align="center" sx={{fontSize: 75, fontFamily: 'lyon-display-web', fontWeight: 800}}>How I Made This Website</Typography>
                 <Divider sx={{marginBottom: 3}}/>
@@ -68,7 +68,8 @@ const Post = () => {
                     of making this project easier, I decided to completely start over by switching to 
                     a JavaScript library called Reactjs to make this website cause I heard that it makes 
                     life easier in the long run. But don't worry, there's actually plenty of similarities 
-                    in the syntax if you take a look at the source code. <br/>
+                    in the syntax if you take a look at the 
+                    <a className="post-link" href="https://github.com/Darianlmj/Web-Portfolio"> source code</a>. <br/>
                     <br/>
                 </Typography>
 
