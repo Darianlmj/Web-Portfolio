@@ -26,12 +26,12 @@ const Posts = () => {
                     Hope you understand.
                 </Typography>
 
-                <Grid className="postcard" container spacing={2} sx={{justifyContent: 'space-evenly', marginTop: 6, marginBottom: 6, 
+                <Grid container spacing={2} sx={{justifyContent: 'space-evenly', marginTop: 6, marginBottom: 6, 
                                                                       flexDirection: { xs: "column", md: "row"}, alignItems: {xs: 'center'}}}>
                     {posts.map((post) => (
                         <Grid  xs={9} md={5} sx={{paddingBottom: {xs: 5}}}>
                             <Link to={`/post/${post.id}`} style={{ textDecoration: 'none' }}>
-                                <Card  sx={{padding: 3, borderRadius: 3, minHeight: 290}}>
+                                <Card  className="postcard" sx={{padding: 3, borderRadius: 3, minHeight: 290}}>
                                     <Typography sx={{fontSize: '1.1rem', color: '#4285F4'}}>{post.tag}</Typography>
                                     <Typography sx={{fontSize: '2rem'}}>{post.title}</Typography>
                                     <Divider sx={{paddingTop: 1, marginBottom: 1.3}} />
