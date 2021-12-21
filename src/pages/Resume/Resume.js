@@ -183,10 +183,63 @@ const Resume = () => {
                 </HeaderContainer>
                 <div>
                     <ResContent>
+
+                        <div>
+                            <div style={{fontSize: 23, color: 'black'}}>
+                                Asteroids <br/>
+                            </div>
+                            <div style={{fontSize: 18, color: '#4285F4'}}>December 2021</div>
+                            <div style={{paddingTop: 10, paddingBottom: 10}}>
+                                A command-line interface (CLI) program simulating a simplified version of the <br/> 
+                                popular arcade game &#8212; Asteroids. The objective of the game is to fire lasers from <br/>
+                                a spacecraft in order to destroy the incoming asteroids located on the map before <br/> 
+                                it reaches the edge. <br/><br/>
+
+                                Built using C++, the game contains the following features: <br/>
+                                <ul style={{paddingLeft: 40}}>
+                                    <li>3 preset game modes (easy, intermediate, expert),  which randomly <br/>generates asteroids on the map</li> 
+                                    <li>Ability to customise the game to the player's liking (custom game mode)</li> 
+                                    <li>Asteroids may contain TNT which can destroy nearby asteroids if triggered</li>  
+                                    <li>The map can be rotated once per game to the player's advantage</li>  
+                                </ul> 
+                            </div>
+                            <div style={{textAlign: 'center', paddingBottom: 60}}>
+                                <Button sx={{background:"#4285F4", "&.MuiButtonBase-root:hover": {
+                                                color: "white"
+                                            }}} 
+                                        href='https://github.com/Darianlmj/Asteroids' 
+                                        variant="contained">More Info</Button>
+                            </div>
+                        </div>   
+
+                        <div>
+                            <div style={{fontSize: 23, color: 'black'}}>
+                                Portfolio Website<br/>
+                            </div>
+                            <div style={{fontSize: 18, color: '#4285F4'}}>August 2021 - December 2021</div>
+                            <div style={{paddingTop: 10, paddingBottom: 10}}>
+                                A static "portfolio" style website which you are currently viewing.<br/>
+                                <br/>
+                                Built using React.js and deployed using Heroku, this website contains the <br/>
+                                following features:
+                                <ul style={{paddingLeft: 40}}>
+                                    <li>Multiple pages (some are currently under construction)</li> 
+                                    <li>Responsive content that resizes based on changing aspect-ratio</li>  
+                                </ul> 
+                            </div>
+                            <div style={{textAlign: 'center', paddingBottom: 60}}>
+                                <Button sx={{background:"#4285F4", "&.MuiButtonBase-root:hover": {
+                                                color: "white"
+                                            }}} 
+                                        href='https://github.com/Darianlmj/Web-Portfolio' 
+                                        variant="contained">More Info</Button>
+                            </div>
+                        </div>
+                    <div>
                         <div style={{fontSize: 23, color: 'black'}}>
                             UNSW Streams<br/>
                         </div>
-                        <div style={{fontSize: 18, color: '#4285F4'}}>September 2021 - Present</div>
+                        <div style={{fontSize: 18, color: '#4285F4'}}>September 2021 - November 2021</div>
                         <div style={{paddingTop: 20, paddingBottom: 20}}>
                             A collaborative communications platform intended to facilitate teaching <br/>
                             and studies during the COVID-19 pandemic.<br/>
@@ -209,32 +262,7 @@ const Resume = () => {
                             Collaborated with 5 members following Agile practices such as version control,<br/> 
                             standups and issue tracking using Jira.
                         </div>
-                    
-                        <div>
-                            <div style={{fontSize: 23, color: 'black'}}>
-                                Portfolio Website<br/>
-                            </div>
-                            <div style={{fontSize: 18, color: '#4285F4'}}>August 2021 - Present</div>
-                            <div style={{paddingTop: 10, paddingBottom: 10}}>
-                                A static "portfolio" style website which you are currently viewing this on.
-                            </div>
-                            <div style={{paddingTop: 10, paddingBottom: 10}}>
-                                Built using React.js and deployed using Heroku, this website contains the <br/>
-                                following features:
-                                <ul style={{paddingLeft: 40}}>
-                                    <li>Multiple pages (some are currently under construction)</li> 
-                                    <li>Responsive content that resizes based on changing aspect-ratio</li>  
-                                </ul> 
-                            </div>
-                            <div style={{textAlign: 'center', paddingBottom: 60}}>
-                                <Button sx={{background:"#4285F4", "&.MuiButtonBase-root:hover": {
-                                                color: "white"
-                                            }}} 
-                                        href='https://github.com/Darianlmj/Web-Portfolio' 
-                                        variant="contained">More Info</Button>
-                            </div>
-                        </div>
-                    <div>
+
                         <div style={{fontSize: 23, color: 'black'}}>
                                 Sekuro Minor Project<br/>
                         </div>
@@ -277,7 +305,7 @@ const Resume = () => {
                             Programming Languages <br/>
                         </div>
                         <div style={{paddingTop: 10, paddingBottom: 20}}>
-                            Python, C, HTML, CSS, Javascript, React.js
+                            Python, C, C++, HTML, CSS, Javascript, React.js
                         </div>
                     </div>
                     <div>
