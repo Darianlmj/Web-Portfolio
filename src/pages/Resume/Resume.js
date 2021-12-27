@@ -69,6 +69,16 @@ const Resume = () => {
             <ResContainer>
                 <ResContent>
                     <div style={{fontSize: 23, color: 'black'}}>
+                        UNSW Computer Science and Engineering Society (CSESoc) <br/>
+                        Project Lead <br/>
+                    </div>
+                    <div style={{fontSize: 18, color: '#4285F4'}}>December 2021 - Present</div>
+                    <div style={{paddingTop: 20, paddingBottom: 40}}>
+                        Managing the Jobs Board for the society, a place where companies are able <br/>
+                        to advertise open positions, alongside 2 other project leads. <br/>
+                    </div>
+
+                    <div style={{fontSize: 23, color: 'black'}}>
                         UNSW ASEAN Society IT Associate<br/>
                     </div>
                     <div style={{fontSize: 18, color: '#4285F4'}}>June 2021 - Present</div>
